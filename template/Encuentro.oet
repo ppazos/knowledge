@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.openehr.org/v1">
   <id>01f55286-f1df-4dc1-8955-c858be23f025</id>
   <name>Encuentro</name>
   <description>
