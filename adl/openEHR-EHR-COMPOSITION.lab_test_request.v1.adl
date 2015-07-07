@@ -1,0 +1,56 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.lab_test_request.v1
+
+concept
+	[at0000]	-- Solicitud de estudios de laboratorio
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Documento de solicitud de estudios de laboratorio">
+			use = <"Utilizar para registrar información relativa a solicitudes de laboratorio.">
+			misuse = <"No utilizar para solicitud de otros tipos de estudios (ej. imagenología) u otros servicios (ej. prescripción de medicamentos).">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"71B1603D153B71DCB1EC6FE3269D8C48">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Solicitud de estudios de laboratorio
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype INSTRUCTION[at0001] occurrences matches {0..*} matches {	-- Solicitudes
+				include
+					archetype_id/value matches {/openEHR-EHR-INSTRUCTION\.request-lab_test\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Solicitud de estudios de laboratorio">
+					description = <"Documento de solicitud de estudios de laboratorio">
+				>
+				["at0001"] = <
+					text = <"Solicitudes">
+					description = <"Solicitudes de estudios">
+				>
+			>
+		>
+	>
