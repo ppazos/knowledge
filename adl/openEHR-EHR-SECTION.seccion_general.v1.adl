@@ -1,0 +1,40 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-SECTION.seccion_general.v1
+
+concept
+	[at0000]	-- Seccion general
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Seccion general">
+			use = <"Seccion general">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"09A8F812C658832A4DA66E85270B7E5A">
+	>
+
+definition
+	SECTION[at0000] matches {*}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Seccion general">
+					description = <"unknown">
+				>
+			>
+		>
+	>

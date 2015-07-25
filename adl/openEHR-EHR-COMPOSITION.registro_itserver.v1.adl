@@ -1,0 +1,50 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.registro_itserver.v1
+
+concept
+	[at0000]	-- Registro itserver
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"Pablo Pazos">
+		["organisation"] = <"CaboLabs">
+		["email"] = <"pablo.pazos@cabolabs.com">
+		["date"] = <"2015-07-23">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Registro clínico codificado">
+			use = <"Registro clínico codificado">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["current_contact"] = <"Ing. Pablo Pazos, http://www.cabolabs.com, pablo.pazos@cabolabs.com">
+		["MD5-CAM-1.0.1"] = <"C28B9DF470242801FC29F0AAA11F922D">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Registro itserver
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Registro itserver">
+					description = <"unknown">
+				>
+			>
+		>
+	>
