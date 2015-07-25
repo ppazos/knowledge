@@ -5,7 +5,7 @@
     <terminology_id>
       <value>ISO_639-1</value>
     </terminology_id>
-    <code_string>en</code_string>
+    <code_string>es</code_string>
   </language>
   <description>
     <original_author id="Original Author">Not Specified</original_author>
@@ -27,7 +27,7 @@
         <terminology_id>
           <value>ISO_639-1</value>
         </terminology_id>
-        <code_string>en</code_string>
+        <code_string>es</code_string>
       </language>
       <purpose>Not Specified</purpose>
     </details>
@@ -38,7 +38,7 @@
   <template_id>
     <value>Regisrto itserver</value>
   </template_id>
-  <concept>Regisrto itserver</concept>
+  <concept>Registro itserver</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
@@ -958,127 +958,113 @@
               <value>openEHR-EHR-EVALUATION.problem_diagnosis-problem_diagnosis_coded.v1</value>
             </archetype_id>
             <term_definitions code="at0000">
-              <items id="comment">Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.</items>
-              <items id="description">Details about a single identified health condition, injury or issue which impacts on the physical, mental and/or social well-being of an individual.</items>
-              <items id="text">Problem/diagnosis</items>
+              <items id="description">Detalles de una condición o problema de salud que puede afectar física, mental o socialmente al paciente y es identificado por un profesional clínico.</items>
+              <items id="text">Problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0000.1">
-              <items id="comment">Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!</items>
-              <items id="description">Details about a single identified health condition, injury or issue which impacts on the physical, mental and/or social well-being of an individual.!</items>
-              <items id="text">Problem/diagnosis</items>
+              <items id="comment">*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!(en)</items>
+              <items id="description">Problema/diagnóstico</items>
+              <items id="text">Problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0001">
               <items id="description">@ internal @</items>
               <items id="text">structure</items>
             </term_definitions>
             <term_definitions code="at0002">
-              <items id="comment">Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.</items>
-              <items id="description">Identification, by name and or code, of the problem or diagnosis.</items>
-              <items id="text">Problem/diagnosis name</items>
+              <items id="description">Identificación por nombre y/o código del problema/diagnóstico</items>
+              <items id="text">Nombre del problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0002.1">
-              <items id="description">Identifier and name of the problem/diagnosis</items>
-              <items id="text">Problem/Diagnosis</items>
+              <items id="description">Identificación por nombre y/o código del problema/diagnóstico</items>
+              <items id="text">Nombre del problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0003">
-              <items id="comment">Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.</items>
-              <items id="description">Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.</items>
-              <items id="text">Date/time clinically recognised</items>
+              <items id="description">Fecha y hora, estimado o real, cuándo el problema/diagnóstico es detectado por un profesional de la salud</items>
+              <items id="text">Momento de reconocimiento del problema</items>
             </term_definitions>
             <term_definitions code="at0005">
-              <items id="comment">If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.</items>
-              <items id="description">An assessment of the overall severity of the problem or diagnosis.</items>
-              <items id="text">Severity</items>
+              <items id="description">Valoración de la severidad del problema/diagnóstico</items>
+              <items id="text">Severidad</items>
             </term_definitions>
             <term_definitions code="at0009">
-              <items id="comment">Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis.</items>
-              <items id="description">Narrative description about the problem or diagnosis.</items>
-              <items id="text">Clinical description</items>
+              <items id="description">Descripción narrativa del problema/diagnóstico</items>
+              <items id="text">Descripción clínica</items>
             </term_definitions>
             <term_definitions code="at0012">
-              <items id="comment">Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype.
- Use this data element to record precoordinated anatomical locations. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. </items>
-              <items id="description">Record of a simple body site where the problem or diagnosis was located.</items>
-              <items id="text">Anatomical location</items>
+              <items id="description">Lugar del cuerpo donde se detecta el problema/diagnóstico</items>
+              <items id="text">Ubicación anatómica</items>
             </term_definitions>
             <term_definitions code="at0027">
-              <items id="description">Identification of other diagnoses and problems that have a relationship to the  diagnosis or problem recorded using this archetype instance.</items>
-              <items id="text">Related item</items>
+              <items id="description">Identificación de otros problemas/diagnósticos que están relacionados al problema/diagnóstico actual</items>
+              <items id="text">Elemento relacionado</items>
             </term_definitions>
             <term_definitions code="at0028">
-              <items id="comment">Record as text, coded text or a link within the EHR.</items>
-              <items id="description">Identification of the related problem or diagnosis.</items>
-              <items id="text">Item</items>
+              <items id="description">Identificación del problema/diagnóstico relacionado</items>
+              <items id="text">Elemento</items>
             </term_definitions>
             <term_definitions code="at0029">
-              <items id="comment">Where no causality or sequence of events is known, this relationship type should be left blank.</items>
-              <items id="description">The type of relationship that this problem or diagnosis has to the item.</items>
-              <items id="text">Relationship</items>
+              <items id="description">Tipo de relación que este problema/diagnóstico tiene con el elemento relacionado</items>
+              <items id="text">Relación</items>
             </term_definitions>
             <term_definitions code="at0030">
-              <items id="comment">Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.</items>
-              <items id="description">Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.</items>
-              <items id="text">Date/time of resolution</items>
+              <items id="description">Día y hora, estimado o real, en que el problema/diagnóstico fue resuelto o entró en remisión</items>
+              <items id="text">Momento de resolución</items>
             </term_definitions>
             <term_definitions code="at0032">
               <items id="description">@ internal @</items>
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0039">
-              <items id="comment">If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, use of this SLOT becomes redundant.</items>
-              <items id="description">Slot to contain detailed and structured anatomical location details.</items>
-              <items id="text">Structured anatomical location</items>
+              <items id="description">Este espacio permite registrar información estructurada sobre la ubicación anatómica</items>
+              <items id="text">Ubicación anatómica estructurada</items>
             </term_definitions>
             <term_definitions code="at0040">
-              <items id="description">This concept identifies the direct cause or causative agent of a Problem/Diagnosis. The concept includes the idea of ‘complications’, ‘causative agent’ and ‘due to’.</items>
-              <items id="text">Caused by</items>
+              <items id="description">Causa directa o indirecta del problema/diagnóstico</items>
+              <items id="text">Causa</items>
             </term_definitions>
             <term_definitions code="at0041">
-              <items id="description">This value identifies the sequence of events between the related items, but does not assert causality. This can be used for sequelae or late effects.</items>
-              <items id="text">Following</items>
+              <items id="description">Este valor identifica la secuencia de eventos entre elementos relacionados, y puede ser utilizado para describir secuelas o efectos tardíos</items>
+              <items id="text">Secuencia</items>
             </term_definitions>
             <term_definitions code="at0043">
-              <items id="comment">May include structured detail about the grading or staging of the diagnosis; diagnostic criteria, classification criteria or formal severity assessments such as Common Terminology Criteria for Adverse Events.</items>
-              <items id="description">Details that are additionally required to record as unique attributes of this problem or diagnosis.</items>
-              <items id="text">Specific details</items>
+              <items id="description">Detalles adicionales para el problema/diagnóstico</items>
+              <items id="text">Detalles específicos</items>
             </term_definitions>
             <term_definitions code="at0044">
-              <items id="description">Narrative description about the item.</items>
-              <items id="text">Description</items>
+              <items id="description">Descripción narrativa del elemento relacionado</items>
+              <items id="text">Descripción</items>
             </term_definitions>
             <term_definitions code="at0046">
-              <items id="comment">Use status or context qualifiers with care, as they are avariably used in practic and interoperability cannot be assured unless usage is clearly defined with the community of use. For example: active status - active, inactive, resolved, in remission; evolution status - initial, interim/working, final; temporal status - current, past; episodicity status - first, new, ongoing; admission status - admission, discharge; or priority status - primary, secondary.</items>
-              <items id="description">Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process.</items>
-              <items id="text">Status</items>
+              <items id="description">Detalles estructurados de la ubicación, dominio, episodio o flujo de trabajo de aspectos específicos del proceso diagnóstico</items>
+              <items id="text">Estatus</items>
             </term_definitions>
             <term_definitions code="at0047">
-              <items id="description">The problem or diagnosis does not interfere with normal activity.</items>
-              <items id="text">Mild</items>
+              <items id="description">El problema tiene severidad leve</items>
+              <items id="text">Leve</items>
             </term_definitions>
             <term_definitions code="at0048">
-              <items id="description">The problem or diagnosis causes interference with normal activity.</items>
-              <items id="text">Moderate</items>
+              <items id="description">El problema tiene severidad moderada</items>
+              <items id="text">Moderada</items>
             </term_definitions>
             <term_definitions code="at0049">
-              <items id="description">The problem or diagnosis prevents normal activity.</items>
-              <items id="text">Severe</items>
+              <items id="description">El problema tiene severidad severo</items>
+              <items id="text">Severo</items>
             </term_definitions>
             <term_definitions code="at0069">
-              <items id="description">Additional narrative about the problem or diagnosis not captured in other fields.</items>
-              <items id="text">Comment</items>
+              <items id="description">Comentario narrativo adicional sobre el problema/diagnóstico no capturado en otros campos</items>
+              <items id="text">Comentario</items>
             </term_definitions>
             <term_definitions code="at0070">
-              <items id="description">The date this problem or diagnosis was last updated.</items>
-              <items id="text">Last updated</items>
+              <items id="description">Fecha en la que el problema/diagnóstico fue actualizado</items>
+              <items id="text">Última actualización</items>
             </term_definitions>
             <term_definitions code="at0071">
-              <items id="comment">For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.</items>
-              <items id="description">Additional information required to capture local content or to align with other reference models/formalisms.</items>
-              <items id="text">Extension</items>
+              <items id="description">Información adicional requerida para capturar el contenido local o alinear con otros modelos o formalismos para el problema/diagnóstico</items>
+              <items id="text">Extensión</items>
             </term_definitions>
             <term_definitions code="at0072">
-              <items id="description">Narrative description about the course of the problem or diagnosis since onset.</items>
-              <items id="text">Course description</items>
+              <items id="description">Descripción narrativa del progreso del problema/diagnóstico desde su comienzo</items>
+              <items id="text">Progreso</items>
             </term_definitions>
           </children>
           <children xsi:type="C_ARCHETYPE_ROOT">
@@ -3056,158 +3042,146 @@
               <value>openEHR-EHR-ACTION.procedure-coded_name.v1</value>
             </archetype_id>
             <term_definitions code="at0000">
-              <items id="description">A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.</items>
-              <items id="text">Procedure</items>
+              <items id="description">Una actividad clínica llevada a cabo para la detección, investigación, diagnóstico, curativos, terapéuticos, de evaluación o con fines paliativos.</items>
+              <items id="text">Procedimiento</items>
             </term_definitions>
             <term_definitions code="at0000.1">
-              <items id="description">*A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.!(en)</items>
-              <items id="text">Coded Procedure</items>
+              <items id="description">Procedimiento codificado</items>
+              <items id="text">Procedimiento codificado</items>
             </term_definitions>
             <term_definitions code="at0001">
               <items id="description">@ internal @</items>
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0002">
-              <items id="comment">Coding of the specific procedure with a terminology is preferred, where possible.</items>
-              <items id="description">Identification of the procedure by name.</items>
-              <items id="text">Procedure name</items>
+              <items id="description">Nombre del procedimiento</items>
+              <items id="text">Nombre del procedimiento</items>
             </term_definitions>
             <term_definitions code="at0002.1">
-              <items id="description">Procedure name</items>
-              <items id="text">Procedure name</items>
+              <items id="description">Nombre del procedimiento</items>
+              <items id="text">Nombre del procedimiento</items>
             </term_definitions>
             <term_definitions code="at0003">
-              <items id="comment">Use to capture detailed, structured information about anatomical location, method &amp; technique, equipment used, devices implanted, results, findings etc.</items>
-              <items id="description">Structured information about the procedure.</items>
-              <items id="text">Procedure detail</items>
+              <items id="description">Información estructurada de los detalles del procedimiento</items>
+              <items id="text">Detalles</items>
             </term_definitions>
             <term_definitions code="at0005">
-              <items id="description">Additional narrative about the activity or care pathway step not captured in other fields.</items>
-              <items id="text">Comment</items>
+              <items id="description">Comentario narrativo adicional acerca de las actividades llevadas a cabo en la ejecución del procedimiento y que no son capturadas por otros campos</items>
+              <items id="text">Comentario</items>
             </term_definitions>
             <term_definitions code="at0006">
-              <items id="comment">Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. </items>
-              <items id="description">Details about any complication arising from the procedure.</items>
-              <items id="text">Complication</items>
+              <items id="description">Detalles de cualquier complicación surgida durante la ejecución del procedimiento</items>
+              <items id="text">Complicación</items>
             </term_definitions>
             <term_definitions code="at0014">
-              <items id="comment">For example: the reason for the cancellation or suspension of the procedure.</items>
-              <items id="description">Reason that the activity or care pathway step for the identified procedure was carried out.</items>
-              <items id="text">Reason</items>
+              <items id="comment">Por ejemplo: motivo de cancelación o suspensión del procedimiento</items>
+              <items id="description">Motivo por el cual una actividad o paso de la vía clínica del arquetipo fue ejecutado como parte del procedimiento</items>
+              <items id="text">Motivo</items>
             </term_definitions>
             <term_definitions code="at0034">
-              <items id="description">The procedure to be undertaken is planned.</items>
-              <items id="text">Procedure planned</items>
+              <items id="description">Está previsto que el procedimiento que se ha llevado a cabo.</items>
+              <items id="text">Procedimiento planificado</items>
             </term_definitions>
             <term_definitions code="at0035">
-              <items id="description">Request for procedure sent.</items>
-              <items id="text">Procedure request sent</items>
+              <items id="description">Solicitud de procedimiento enviada</items>
+              <items id="text">Solicitud de procedimiento enviada</items>
             </term_definitions>
             <term_definitions code="at0036">
-              <items id="description">The procedure has been scheduled.</items>
-              <items id="text">Procedure scheduled</items>
+              <items id="description">Procedimiento coordinado</items>
+              <items id="text">Procedimiento coordinado</items>
             </term_definitions>
             <term_definitions code="at0038">
-              <items id="description">The procedure has been postponed.</items>
-              <items id="text">Procedure postponed</items>
+              <items id="description">Procedimiento pospuesto</items>
+              <items id="text">Procedimiento pospuesto</items>
             </term_definitions>
             <term_definitions code="at0039">
-              <items id="description">The planned procedure has been cancelled prior to commencement.</items>
-              <items id="text">Procedure cancelled</items>
+              <items id="description">Procedimiento cancelado antes de comenzar</items>
+              <items id="text">Procedimiento cancelado</items>
             </term_definitions>
             <term_definitions code="at0040">
-              <items id="description">The procedure has been suspended.</items>
-              <items id="text">Procedure suspended</items>
+              <items id="description">Procedimiento suspendido</items>
+              <items id="text">Procedimiento suspendido</items>
             </term_definitions>
             <term_definitions code="at0041">
-              <items id="description">The procedure has been aborted.</items>
-              <items id="text">Procedure aborted</items>
+              <items id="description">Procedimiento interrumpido</items>
+              <items id="text">Procedimiento interrumpido</items>
             </term_definitions>
             <term_definitions code="at0043">
-              <items id="description">The procedure has been performed and all associated clinical activities completed.</items>
-              <items id="text">Procedure completed</items>
+              <items id="description">Procedimiento completado</items>
+              <items id="text">Procedimiento completado</items>
             </term_definitions>
             <term_definitions code="at0047">
-              <items id="description">The procedure, or subprocedure in a multicomponent procedure, has been performed.</items>
-              <items id="text">Procedure performed</items>
+              <items id="description">Procedimiento realizado</items>
+              <items id="text">Procedimiento realizado</items>
             </term_definitions>
             <term_definitions code="at0048">
-              <items id="comment">Coding with a terminology is preferred, where possible.</items>
-              <items id="description">Outcome of procedure performed.</items>
-              <items id="text">Outcome</items>
+              <items id="description">Resultado del procedimiento realizado</items>
+              <items id="text">Resultado</items>
             </term_definitions>
             <term_definitions code="at0049">
-              <items id="comment">For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure.</items>
-              <items id="description">Narrative description about the procedure, as appropriate for the pathway step.</items>
-              <items id="text">Description</items>
+              <items id="description">Descripción narrativa del procedimiento</items>
+              <items id="text">Descripción</items>
             </term_definitions>
             <term_definitions code="at0053">
               <items id="description">@ internal @</items>
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0054">
-              <items id="description">The local ID assigned to the order by the healthcare provider or organisation requesting the service.</items>
-              <items id="text">Requestor order identifier</items>
+              <items id="description">Identificador local asignado a la orden por el proveedor de salud o la organización donde se solicita la realización del procedimiento</items>
+              <items id="text">Identificador de orden del solicitante</items>
             </term_definitions>
             <term_definitions code="at0055">
-              <items id="description">Details about the healthcare provider or organisation requesting the service.</items>
-              <items id="text">Requestor</items>
+              <items id="description">Detalles del proveedor de salud que solicita la realización del procedimiento</items>
+              <items id="text">Solicitante</items>
             </term_definitions>
             <term_definitions code="at0056">
-              <items id="description">The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.</items>
-              <items id="text">Receiver order identifier</items>
+              <items id="description">Identificador de la orden del procedimiento asignado por el profesional, departamento o institución que debe llevar a cabo el procedimiento.</items>
+              <items id="text">Identificador de la orden del receptor</items>
             </term_definitions>
             <term_definitions code="at0057">
-              <items id="description">Details about the healthcare provider or organisation receiving the request for service.</items>
-              <items id="text">Receiver</items>
+              <items id="description">Detalles sobre el profesional, departamento u organización que debe realizar el procedimiento</items>
+              <items id="text">Receptor</items>
             </term_definitions>
             <term_definitions code="at0058">
-              <items id="comment">Coding with a terminology is preferred, where possible.</items>
-              <items id="description">Urgency of the procedure.</items>
-              <items id="text">Urgency</items>
+              <items id="description">Urgencia del procedimiento</items>
+              <items id="text">Urgencia</items>
             </term_definitions>
             <term_definitions code="at0060">
-              <items id="comment">Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.</items>
-              <items id="description">The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.</items>
-              <items id="text">Final end date/time</items>
+              <items id="description">Fecha y hora cuando el procedimiento fue finalizado en su totalidad</items>
+              <items id="text">Fecha de finalización</items>
             </term_definitions>
             <term_definitions code="at0061">
-              <items id="comment">Only for use in association with the 'Procedure completed' pathway steps.</items>
-              <items id="description">The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended.</items>
-              <items id="text">Total duration</items>
+              <items id="description">Cantidad total de tiempo que tomó la ejecución del procedimiento.</items>
+              <items id="text">Duración</items>
             </term_definitions>
             <term_definitions code="at0062">
-              <items id="description">Mulitimedia representation of a performed procedure.</items>
+              <items id="description">Representación multimedia del procedimiento realizado</items>
               <items id="text">Multimedia</items>
             </term_definitions>
             <term_definitions code="at0063">
-              <items id="comment">Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.</items>
-              <items id="description">Identification of the body site for the procedure.</items>
-              <items id="text">Body site</items>
+              <items id="description">Identificación de la zona del cuerpo para el procedimiento.</items>
+              <items id="text">Zona corporal</items>
             </term_definitions>
             <term_definitions code="at0064">
-              <items id="comment">For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.</items>
-              <items id="description">Additional information required to capture local content or to align with other reference models/formalisms.</items>
-              <items id="text">Extension</items>
+              <items id="description">Información adicional requerida para capturar contenido local o alinear el arquetipo a otros modelos o formalismos</items>
+              <items id="text">Extensión</items>
             </term_definitions>
             <term_definitions code="at0065">
-              <items id="comment">Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.</items>
-              <items id="description">Identification of specific method or technique for the procedure.</items>
-              <items id="text">Method</items>
+              <items id="description">Identificación del método o técnica específica para el procedimiento</items>
+              <items id="text">Método</items>
             </term_definitions>
             <term_definitions code="at0066">
-              <items id="comment">Only for use in association with the 'Procedure scheduled' pathway step.</items>
-              <items id="description">The date and/or time on which the procedure is intended to be performed.</items>
-              <items id="text">Scheduled date/time</items>
+              <items id="comment">Utilizar solamente para el paso de Procedimiento coordinado de la vía clínica del arquetipo</items>
+              <items id="description">Fecha y hora en el cual se coordinó la realización del procedimiento</items>
+              <items id="text">Fecha coordinada</items>
             </term_definitions>
             <term_definitions code="at0067">
-              <items id="comment">This pragmatic data element may be used to support organisation within the user interface.</items>
-              <items id="description">The type of procedure.</items>
-              <items id="text">Procedure category</items>
+              <items id="description">Categoría o tipo de procedimiento</items>
+              <items id="text">Categoría</items>
             </term_definitions>
             <term_definitions code="at0068">
-              <items id="description">The procedure, or subprocedure in a multicomponent procedure, has been commenced.</items>
-              <items id="text">Procedure commenced</items>
+              <items id="description">Procedimiento iniciado</items>
+              <items id="text">Procedimiento iniciado</items>
             </term_definitions>
           </children>
           <cardinality>
@@ -3446,24 +3420,20 @@
               <value>openEHR-EHR-EVALUATION.reason_for_encounter.v1</value>
             </archetype_id>
             <term_definitions code="at0000">
-              <items id="description">The reason for initiation of any healthcare encounter or contact by the individual who is the subject of care.</items>
-              <items id="text">Reason for encounter</items>
+              <items id="description">Motivo del paciente por el cual se inició un encuentro clínico o contacto.</items>
+              <items id="text">Motivo de consulta</items>
             </term_definitions>
             <term_definitions code="at0001">
               <items id="description">@ internal @</items>
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0002">
-              <items id="comment">oding of the Reason for Contact with a terminology is desirable, where possible. Examples include: pre-employment medical, routine antenatal visit, women's health check, pre-operative assessment, or annual medical check-up.
-</items>
-              <items id="description">Identification of the type, or administrative category, of healthcare sought or required by the subject of care.</items>
-              <items id="text">Contact type</items>
+              <items id="description">Identificación del tipo o categoría administrativa por la cuál el paciente busca asistencia médica</items>
+              <items id="text">Tipo de contacto</items>
             </term_definitions>
             <term_definitions code="at0004">
-              <items id="comment">Coding of the Presenting Problem with a terminology is desirable, where possible. Clinical or social reasons for seeking healthcare can include health issues, symptoms or physical signs. Examples: health issues - desire to quit smoking, domestic violence; symptoms - abdominal pain , shortness of breath; physical signs - an altered conscious state. 'Chief complaint' may be used as a valid synonym for Presenting Problem in templates.
- </items>
-              <items id="description">Identification of the clinical or social problem motivating the subject of care to seeking healthcare.</items>
-              <items id="text">Presenting problem</items>
+              <items id="description">Problema o síntoma reportado por el paciente, que da inicio a la consulta médica</items>
+              <items id="text">Problema presentado</items>
             </term_definitions>
           </children>
           <children xsi:type="C_ARCHETYPE_ROOT">
@@ -4244,127 +4214,113 @@
               <value>openEHR-EHR-EVALUATION.problem_diagnosis-problem_diagnosis_coded.v1</value>
             </archetype_id>
             <term_definitions code="at0000">
-              <items id="comment">Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.</items>
-              <items id="description">Details about a single identified health condition, injury or issue which impacts on the physical, mental and/or social well-being of an individual.</items>
-              <items id="text">Problem/diagnosis</items>
+              <items id="description">Detalles de una condición o problema de salud que puede afectar física, mental o socialmente al paciente y es identificado por un profesional clínico.</items>
+              <items id="text">Problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0000.1">
-              <items id="comment">Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!</items>
-              <items id="description">Details about a single identified health condition, injury or issue which impacts on the physical, mental and/or social well-being of an individual.!</items>
-              <items id="text">Problem/diagnosis</items>
+              <items id="comment">*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!(en)</items>
+              <items id="description">Problema/diagnóstico</items>
+              <items id="text">Problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0001">
               <items id="description">@ internal @</items>
               <items id="text">structure</items>
             </term_definitions>
             <term_definitions code="at0002">
-              <items id="comment">Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.</items>
-              <items id="description">Identification, by name and or code, of the problem or diagnosis.</items>
-              <items id="text">Problem/diagnosis name</items>
+              <items id="description">Identificación por nombre y/o código del problema/diagnóstico</items>
+              <items id="text">Nombre del problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0002.1">
-              <items id="description">Identifier and name of the problem/diagnosis</items>
-              <items id="text">Problem/Diagnosis</items>
+              <items id="description">Identificación por nombre y/o código del problema/diagnóstico</items>
+              <items id="text">Nombre del problema/diagnóstico</items>
             </term_definitions>
             <term_definitions code="at0003">
-              <items id="comment">Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.</items>
-              <items id="description">Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.</items>
-              <items id="text">Date/time clinically recognised</items>
+              <items id="description">Fecha y hora, estimado o real, cuándo el problema/diagnóstico es detectado por un profesional de la salud</items>
+              <items id="text">Momento de reconocimiento del problema</items>
             </term_definitions>
             <term_definitions code="at0005">
-              <items id="comment">If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.</items>
-              <items id="description">An assessment of the overall severity of the problem or diagnosis.</items>
-              <items id="text">Severity</items>
+              <items id="description">Valoración de la severidad del problema/diagnóstico</items>
+              <items id="text">Severidad</items>
             </term_definitions>
             <term_definitions code="at0009">
-              <items id="comment">Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis.</items>
-              <items id="description">Narrative description about the problem or diagnosis.</items>
-              <items id="text">Clinical description</items>
+              <items id="description">Descripción narrativa del problema/diagnóstico</items>
+              <items id="text">Descripción clínica</items>
             </term_definitions>
             <term_definitions code="at0012">
-              <items id="comment">Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype.
- Use this data element to record precoordinated anatomical locations. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. </items>
-              <items id="description">Record of a simple body site where the problem or diagnosis was located.</items>
-              <items id="text">Anatomical location</items>
+              <items id="description">Lugar del cuerpo donde se detecta el problema/diagnóstico</items>
+              <items id="text">Ubicación anatómica</items>
             </term_definitions>
             <term_definitions code="at0027">
-              <items id="description">Identification of other diagnoses and problems that have a relationship to the  diagnosis or problem recorded using this archetype instance.</items>
-              <items id="text">Related item</items>
+              <items id="description">Identificación de otros problemas/diagnósticos que están relacionados al problema/diagnóstico actual</items>
+              <items id="text">Elemento relacionado</items>
             </term_definitions>
             <term_definitions code="at0028">
-              <items id="comment">Record as text, coded text or a link within the EHR.</items>
-              <items id="description">Identification of the related problem or diagnosis.</items>
-              <items id="text">Item</items>
+              <items id="description">Identificación del problema/diagnóstico relacionado</items>
+              <items id="text">Elemento</items>
             </term_definitions>
             <term_definitions code="at0029">
-              <items id="comment">Where no causality or sequence of events is known, this relationship type should be left blank.</items>
-              <items id="description">The type of relationship that this problem or diagnosis has to the item.</items>
-              <items id="text">Relationship</items>
+              <items id="description">Tipo de relación que este problema/diagnóstico tiene con el elemento relacionado</items>
+              <items id="text">Relación</items>
             </term_definitions>
             <term_definitions code="at0030">
-              <items id="comment">Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.</items>
-              <items id="description">Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.</items>
-              <items id="text">Date/time of resolution</items>
+              <items id="description">Día y hora, estimado o real, en que el problema/diagnóstico fue resuelto o entró en remisión</items>
+              <items id="text">Momento de resolución</items>
             </term_definitions>
             <term_definitions code="at0032">
               <items id="description">@ internal @</items>
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0039">
-              <items id="comment">If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, use of this SLOT becomes redundant.</items>
-              <items id="description">Slot to contain detailed and structured anatomical location details.</items>
-              <items id="text">Structured anatomical location</items>
+              <items id="description">Este espacio permite registrar información estructurada sobre la ubicación anatómica</items>
+              <items id="text">Ubicación anatómica estructurada</items>
             </term_definitions>
             <term_definitions code="at0040">
-              <items id="description">This concept identifies the direct cause or causative agent of a Problem/Diagnosis. The concept includes the idea of ‘complications’, ‘causative agent’ and ‘due to’.</items>
-              <items id="text">Caused by</items>
+              <items id="description">Causa directa o indirecta del problema/diagnóstico</items>
+              <items id="text">Causa</items>
             </term_definitions>
             <term_definitions code="at0041">
-              <items id="description">This value identifies the sequence of events between the related items, but does not assert causality. This can be used for sequelae or late effects.</items>
-              <items id="text">Following</items>
+              <items id="description">Este valor identifica la secuencia de eventos entre elementos relacionados, y puede ser utilizado para describir secuelas o efectos tardíos</items>
+              <items id="text">Secuencia</items>
             </term_definitions>
             <term_definitions code="at0043">
-              <items id="comment">May include structured detail about the grading or staging of the diagnosis; diagnostic criteria, classification criteria or formal severity assessments such as Common Terminology Criteria for Adverse Events.</items>
-              <items id="description">Details that are additionally required to record as unique attributes of this problem or diagnosis.</items>
-              <items id="text">Specific details</items>
+              <items id="description">Detalles adicionales para el problema/diagnóstico</items>
+              <items id="text">Detalles específicos</items>
             </term_definitions>
             <term_definitions code="at0044">
-              <items id="description">Narrative description about the item.</items>
-              <items id="text">Description</items>
+              <items id="description">Descripción narrativa del elemento relacionado</items>
+              <items id="text">Descripción</items>
             </term_definitions>
             <term_definitions code="at0046">
-              <items id="comment">Use status or context qualifiers with care, as they are avariably used in practic and interoperability cannot be assured unless usage is clearly defined with the community of use. For example: active status - active, inactive, resolved, in remission; evolution status - initial, interim/working, final; temporal status - current, past; episodicity status - first, new, ongoing; admission status - admission, discharge; or priority status - primary, secondary.</items>
-              <items id="description">Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process.</items>
-              <items id="text">Status</items>
+              <items id="description">Detalles estructurados de la ubicación, dominio, episodio o flujo de trabajo de aspectos específicos del proceso diagnóstico</items>
+              <items id="text">Estatus</items>
             </term_definitions>
             <term_definitions code="at0047">
-              <items id="description">The problem or diagnosis does not interfere with normal activity.</items>
-              <items id="text">Mild</items>
+              <items id="description">El problema tiene severidad leve</items>
+              <items id="text">Leve</items>
             </term_definitions>
             <term_definitions code="at0048">
-              <items id="description">The problem or diagnosis causes interference with normal activity.</items>
-              <items id="text">Moderate</items>
+              <items id="description">El problema tiene severidad moderada</items>
+              <items id="text">Moderada</items>
             </term_definitions>
             <term_definitions code="at0049">
-              <items id="description">The problem or diagnosis prevents normal activity.</items>
-              <items id="text">Severe</items>
+              <items id="description">El problema tiene severidad severo</items>
+              <items id="text">Severo</items>
             </term_definitions>
             <term_definitions code="at0069">
-              <items id="description">Additional narrative about the problem or diagnosis not captured in other fields.</items>
-              <items id="text">Comment</items>
+              <items id="description">Comentario narrativo adicional sobre el problema/diagnóstico no capturado en otros campos</items>
+              <items id="text">Comentario</items>
             </term_definitions>
             <term_definitions code="at0070">
-              <items id="description">The date this problem or diagnosis was last updated.</items>
-              <items id="text">Last updated</items>
+              <items id="description">Fecha en la que el problema/diagnóstico fue actualizado</items>
+              <items id="text">Última actualización</items>
             </term_definitions>
             <term_definitions code="at0071">
-              <items id="comment">For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.</items>
-              <items id="description">Additional information required to capture local content or to align with other reference models/formalisms.</items>
-              <items id="text">Extension</items>
+              <items id="description">Información adicional requerida para capturar el contenido local o alinear con otros modelos o formalismos para el problema/diagnóstico</items>
+              <items id="text">Extensión</items>
             </term_definitions>
             <term_definitions code="at0072">
-              <items id="description">Narrative description about the course of the problem or diagnosis since onset.</items>
-              <items id="text">Course description</items>
+              <items id="description">Descripción narrativa del progreso del problema/diagnóstico desde su comienzo</items>
+              <items id="text">Progreso</items>
             </term_definitions>
           </children>
           <children xsi:type="C_ARCHETYPE_ROOT">
@@ -6342,158 +6298,146 @@
               <value>openEHR-EHR-ACTION.procedure-coded_name.v1</value>
             </archetype_id>
             <term_definitions code="at0000">
-              <items id="description">A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.</items>
-              <items id="text">Procedure</items>
+              <items id="description">Una actividad clínica llevada a cabo para la detección, investigación, diagnóstico, curativos, terapéuticos, de evaluación o con fines paliativos.</items>
+              <items id="text">Procedimiento</items>
             </term_definitions>
             <term_definitions code="at0000.1">
-              <items id="description">*A clinical activity carried out for screening, investigative, diagnostic, curative, therapeutic, evaluative or palliative purposes.!(en)</items>
-              <items id="text">Coded Procedure</items>
+              <items id="description">Procedimiento codificado</items>
+              <items id="text">Procedimiento codificado</items>
             </term_definitions>
             <term_definitions code="at0001">
               <items id="description">@ internal @</items>
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0002">
-              <items id="comment">Coding of the specific procedure with a terminology is preferred, where possible.</items>
-              <items id="description">Identification of the procedure by name.</items>
-              <items id="text">Procedure name</items>
+              <items id="description">Nombre del procedimiento</items>
+              <items id="text">Nombre del procedimiento</items>
             </term_definitions>
             <term_definitions code="at0002.1">
-              <items id="description">Procedure name</items>
-              <items id="text">Procedure name</items>
+              <items id="description">Nombre del procedimiento</items>
+              <items id="text">Nombre del procedimiento</items>
             </term_definitions>
             <term_definitions code="at0003">
-              <items id="comment">Use to capture detailed, structured information about anatomical location, method &amp; technique, equipment used, devices implanted, results, findings etc.</items>
-              <items id="description">Structured information about the procedure.</items>
-              <items id="text">Procedure detail</items>
+              <items id="description">Información estructurada de los detalles del procedimiento</items>
+              <items id="text">Detalles</items>
             </term_definitions>
             <term_definitions code="at0005">
-              <items id="description">Additional narrative about the activity or care pathway step not captured in other fields.</items>
-              <items id="text">Comment</items>
+              <items id="description">Comentario narrativo adicional acerca de las actividades llevadas a cabo en la ejecución del procedimiento y que no son capturadas por otros campos</items>
+              <items id="text">Comentario</items>
             </term_definitions>
             <term_definitions code="at0006">
-              <items id="comment">Use this data element to record simple terms or precoordinated complications. If the requirements for recording complication are more complex then use of a specific CLUSTER archetype within the 'Procedure detail' SLOT in this archetype is advised and this data element becomes redundant. </items>
-              <items id="description">Details about any complication arising from the procedure.</items>
-              <items id="text">Complication</items>
+              <items id="description">Detalles de cualquier complicación surgida durante la ejecución del procedimiento</items>
+              <items id="text">Complicación</items>
             </term_definitions>
             <term_definitions code="at0014">
-              <items id="comment">For example: the reason for the cancellation or suspension of the procedure.</items>
-              <items id="description">Reason that the activity or care pathway step for the identified procedure was carried out.</items>
-              <items id="text">Reason</items>
+              <items id="comment">Por ejemplo: motivo de cancelación o suspensión del procedimiento</items>
+              <items id="description">Motivo por el cual una actividad o paso de la vía clínica del arquetipo fue ejecutado como parte del procedimiento</items>
+              <items id="text">Motivo</items>
             </term_definitions>
             <term_definitions code="at0034">
-              <items id="description">The procedure to be undertaken is planned.</items>
-              <items id="text">Procedure planned</items>
+              <items id="description">Está previsto que el procedimiento que se ha llevado a cabo.</items>
+              <items id="text">Procedimiento planificado</items>
             </term_definitions>
             <term_definitions code="at0035">
-              <items id="description">Request for procedure sent.</items>
-              <items id="text">Procedure request sent</items>
+              <items id="description">Solicitud de procedimiento enviada</items>
+              <items id="text">Solicitud de procedimiento enviada</items>
             </term_definitions>
             <term_definitions code="at0036">
-              <items id="description">The procedure has been scheduled.</items>
-              <items id="text">Procedure scheduled</items>
+              <items id="description">Procedimiento coordinado</items>
+              <items id="text">Procedimiento coordinado</items>
             </term_definitions>
             <term_definitions code="at0038">
-              <items id="description">The procedure has been postponed.</items>
-              <items id="text">Procedure postponed</items>
+              <items id="description">Procedimiento pospuesto</items>
+              <items id="text">Procedimiento pospuesto</items>
             </term_definitions>
             <term_definitions code="at0039">
-              <items id="description">The planned procedure has been cancelled prior to commencement.</items>
-              <items id="text">Procedure cancelled</items>
+              <items id="description">Procedimiento cancelado antes de comenzar</items>
+              <items id="text">Procedimiento cancelado</items>
             </term_definitions>
             <term_definitions code="at0040">
-              <items id="description">The procedure has been suspended.</items>
-              <items id="text">Procedure suspended</items>
+              <items id="description">Procedimiento suspendido</items>
+              <items id="text">Procedimiento suspendido</items>
             </term_definitions>
             <term_definitions code="at0041">
-              <items id="description">The procedure has been aborted.</items>
-              <items id="text">Procedure aborted</items>
+              <items id="description">Procedimiento interrumpido</items>
+              <items id="text">Procedimiento interrumpido</items>
             </term_definitions>
             <term_definitions code="at0043">
-              <items id="description">The procedure has been performed and all associated clinical activities completed.</items>
-              <items id="text">Procedure completed</items>
+              <items id="description">Procedimiento completado</items>
+              <items id="text">Procedimiento completado</items>
             </term_definitions>
             <term_definitions code="at0047">
-              <items id="description">The procedure, or subprocedure in a multicomponent procedure, has been performed.</items>
-              <items id="text">Procedure performed</items>
+              <items id="description">Procedimiento realizado</items>
+              <items id="text">Procedimiento realizado</items>
             </term_definitions>
             <term_definitions code="at0048">
-              <items id="comment">Coding with a terminology is preferred, where possible.</items>
-              <items id="description">Outcome of procedure performed.</items>
-              <items id="text">Outcome</items>
+              <items id="description">Resultado del procedimiento realizado</items>
+              <items id="text">Resultado</items>
             </term_definitions>
             <term_definitions code="at0049">
-              <items id="comment">For example: description about the performance and findings from the the procedure, the aborted attempt or the cancellation of the procedure.</items>
-              <items id="description">Narrative description about the procedure, as appropriate for the pathway step.</items>
-              <items id="text">Description</items>
+              <items id="description">Descripción narrativa del procedimiento</items>
+              <items id="text">Descripción</items>
             </term_definitions>
             <term_definitions code="at0053">
               <items id="description">@ internal @</items>
               <items id="text">Tree</items>
             </term_definitions>
             <term_definitions code="at0054">
-              <items id="description">The local ID assigned to the order by the healthcare provider or organisation requesting the service.</items>
-              <items id="text">Requestor order identifier</items>
+              <items id="description">Identificador local asignado a la orden por el proveedor de salud o la organización donde se solicita la realización del procedimiento</items>
+              <items id="text">Identificador de orden del solicitante</items>
             </term_definitions>
             <term_definitions code="at0055">
-              <items id="description">Details about the healthcare provider or organisation requesting the service.</items>
-              <items id="text">Requestor</items>
+              <items id="description">Detalles del proveedor de salud que solicita la realización del procedimiento</items>
+              <items id="text">Solicitante</items>
             </term_definitions>
             <term_definitions code="at0056">
-              <items id="description">The ID assigned to the order by the healthcare provider or organisation receiving the request for service. This is also referred to as Filler Order Identifier.</items>
-              <items id="text">Receiver order identifier</items>
+              <items id="description">Identificador de la orden del procedimiento asignado por el profesional, departamento o institución que debe llevar a cabo el procedimiento.</items>
+              <items id="text">Identificador de la orden del receptor</items>
             </term_definitions>
             <term_definitions code="at0057">
-              <items id="description">Details about the healthcare provider or organisation receiving the request for service.</items>
-              <items id="text">Receiver</items>
+              <items id="description">Detalles sobre el profesional, departamento u organización que debe realizar el procedimiento</items>
+              <items id="text">Receptor</items>
             </term_definitions>
             <term_definitions code="at0058">
-              <items id="comment">Coding with a terminology is preferred, where possible.</items>
-              <items id="description">Urgency of the procedure.</items>
-              <items id="text">Urgency</items>
+              <items id="description">Urgencia del procedimiento</items>
+              <items id="text">Urgencia</items>
             </term_definitions>
             <term_definitions code="at0060">
-              <items id="comment">Only for use in association with the 'Procedure performed' pathway step, and in situations where the procedure is repeated on multiple occasions before being completed or there are multiple components to the whole procedure. This may be the same as the RM time attribute for the 'Procedure completed' pathway step.</items>
-              <items id="description">The date and/or time when the entire procedure, or the last component of a multicomponent procedure,  was finished.</items>
-              <items id="text">Final end date/time</items>
+              <items id="description">Fecha y hora cuando el procedimiento fue finalizado en su totalidad</items>
+              <items id="text">Fecha de finalización</items>
             </term_definitions>
             <term_definitions code="at0061">
-              <items id="comment">Only for use in association with the 'Procedure completed' pathway steps.</items>
-              <items id="description">The total amount of time taken to complete the procedure, which may include time spent during the active phase of the procedure plus time during which the procedure was suspended.</items>
-              <items id="text">Total duration</items>
+              <items id="description">Cantidad total de tiempo que tomó la ejecución del procedimiento.</items>
+              <items id="text">Duración</items>
             </term_definitions>
             <term_definitions code="at0062">
-              <items id="description">Mulitimedia representation of a performed procedure.</items>
+              <items id="description">Representación multimedia del procedimiento realizado</items>
               <items id="text">Multimedia</items>
             </term_definitions>
             <term_definitions code="at0063">
-              <items id="comment">Occurrences for this data element are unbounded to allow for clinical scenarios such as removing multiple skin lesions in different places, but where all of the other attributes are identical. Use this data element to record simple terms or precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Procedure detail' SLOT in this archetype. If the anatomical location is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.</items>
-              <items id="description">Identification of the body site for the procedure.</items>
-              <items id="text">Body site</items>
+              <items id="description">Identificación de la zona del cuerpo para el procedimiento.</items>
+              <items id="text">Zona corporal</items>
             </term_definitions>
             <term_definitions code="at0064">
-              <items id="comment">For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.</items>
-              <items id="description">Additional information required to capture local content or to align with other reference models/formalisms.</items>
-              <items id="text">Extension</items>
+              <items id="description">Información adicional requerida para capturar contenido local o alinear el arquetipo a otros modelos o formalismos</items>
+              <items id="text">Extensión</items>
             </term_definitions>
             <term_definitions code="at0065">
-              <items id="comment">Use this data element to record simple terms or a narrative description. If the requirements for recording the method require more complex modelling then this can be represented by additional archetypes within the 'Procedure detail' SLOT in this archetype. If the method is included in the 'Procedure name' via precoordinated codes, this data element becomes redundant.</items>
-              <items id="description">Identification of specific method or technique for the procedure.</items>
-              <items id="text">Method</items>
+              <items id="description">Identificación del método o técnica específica para el procedimiento</items>
+              <items id="text">Método</items>
             </term_definitions>
             <term_definitions code="at0066">
-              <items id="comment">Only for use in association with the 'Procedure scheduled' pathway step.</items>
-              <items id="description">The date and/or time on which the procedure is intended to be performed.</items>
-              <items id="text">Scheduled date/time</items>
+              <items id="comment">Utilizar solamente para el paso de Procedimiento coordinado de la vía clínica del arquetipo</items>
+              <items id="description">Fecha y hora en el cual se coordinó la realización del procedimiento</items>
+              <items id="text">Fecha coordinada</items>
             </term_definitions>
             <term_definitions code="at0067">
-              <items id="comment">This pragmatic data element may be used to support organisation within the user interface.</items>
-              <items id="description">The type of procedure.</items>
-              <items id="text">Procedure category</items>
+              <items id="description">Categoría o tipo de procedimiento</items>
+              <items id="text">Categoría</items>
             </term_definitions>
             <term_definitions code="at0068">
-              <items id="description">The procedure, or subprocedure in a multicomponent procedure, has been commenced.</items>
-              <items id="text">Procedure commenced</items>
+              <items id="description">Procedimiento iniciado</items>
+              <items id="text">Procedimiento iniciado</items>
             </term_definitions>
           </children>
           <cardinality>
