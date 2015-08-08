@@ -1,0 +1,56 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.terminology_ref_compo.v1
+
+concept
+	[at0000]	-- Terminology ref compo
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Terminology ref compo for testing">
+			use = <"Terminology ref compo for testing">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"FB4B342830EE4B851258B8387BD2F869">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Terminology ref compo
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype OBSERVATION[at0001] occurrences matches {0..*} matches {	-- OBSERVATION terminolgy ref
+				include
+					archetype_id/value matches {/openEHR-EHR-OBSERVATION\.terminology_ref\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Terminology ref compo">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"OBSERVATION terminolgy ref">
+					description = <"*">
+				>
+			>
+		>
+	>
