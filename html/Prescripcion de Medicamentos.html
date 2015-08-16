@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="es" lang="es" dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><head><title>Prescripcion de Medicamentos</title><meta http-equiv="Content-Language" content="es" /><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><link rel="stylesheet" type="text/css" href="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/css/clickabletree.css" /><script type="text/javascript">                   
+       <!--
+           function toggleList(id)
+           {
+               elem = document.getElementById(id);
+               elem.style.display == 'none' ? elem.style.display = 'block' : elem.style.display='none';
+           }
+           function toggleExpandAll(topId)
+           {
+               var elem = document.getElementById(topId+"_ExpandAll")
+               elem.innerHTML == "Expand All" ? elem.innerHTML = "Collapse All" : elem.innerHTML = "Expand All"
+               var topelem = document.getElementById(topId+"_treeRoot")                         
+               var elems = topelem.getElementsByTagName("div")
+               for(i=0;i<=elems.length-1;i++)
+               {
+                   if(elems[i].className == "expandable")
+                   {
+                         //   elems[i].style.display == "none" ? elems[i].style.display = "block" : elems[i].style.display = "none"
+                    // We changed it already
+                    elem.innerHTML == "Collapse All" ? elems[i].style.display = "block" : elems[i].style.display = "none"                
+                   }
+               }
+           }
+           function toggleAnnotations(topId)
+           {
+               var elem = document.getElementById(topId+"_annotationCommand")
+               elem.innerHTML == "Show Annotations" ? elem.innerHTML = "Hide Annotations" : elem.innerHTML = "Show Annotations"
+               var topelem = document.getElementById(topId+"_treeRoot")                         
+               var elems = topelem.getElementsByTagName("div")
+               for (i=0;i<=elems.length-1;i++)
+               {
+                   if(elems[i].className == "annotation")
+                   {
+		                //We changed the elem already
+                       elem.innerHTML == "Hide Annotations" ? elems[i].style.display = "block" : elems[i].style.display = "none";
+                   }
+               }
+           }
+       -->
+       </script></head><body class="clickabletree"><div id="_top"><h1 class="clickabletree bordered-title">Prescripcion de Medicamentos</h1><div id="information"><h2 class="clickabletree">Purpose</h2><p class="clickabletree" id="purpose"><img src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/menu/information.png" alt="information" />Not Specified</p></div></div><div class="description"><table class="section"><tr><td class="clickabletree sectionHead">Archetype ID</td><td class="clickabletree sectionBody">openEHR-EHR-COMPOSITION.medication_prescription.v1</td></tr><tr><td class="clickabletree sectionHead">Template ID</td><td class="clickabletree sectionBody">d0ea3a08-6bcc-46e5-956c-f47a5317258e</td></tr><tr><td class="clickabletree sectionHead">MetaDataSet:Sample Set </td><td class="clickabletree sectionBody">Template metadata sample set </td></tr></table></div><div class="treeRoot" id="_treeRoot"><h1 class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/small/composition.png" align="middle" alt="COMPOSITION" />Prescripción de medicamentos</h1><a id="_ExpandAll" class="clickabletree ExpandAllLink" href="javascript:toggleExpandAll('')">Collapse All</a>   
+				<a id="_annotationCommand" class="clickabletree" href="javascript:toggleAnnotations('')">Show Annotations</a><div style="border: 1px solid #ACACAC; margin-right:0.25cm; margin-bottom: 0.15cm; padding-bottom:0.25cm;  display:block; "><div style="margin-left:0.05cm;" id="root1"><h3 class="clickabletree"><a class="clickabletree" href="javascript:toggleList('s_1.1')">[+/-]</a><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/small/section.png" align="middle" alt="SECTION" /><span title="Lista de medicamentos">Lista de medicamentos
+				<font color="#C0C0C0">
+				</font></span></h3><div id="s_1.1" class="expandable" style="border: 1px solid #ACACAC; margin-right:0.25cm; margin-bottom: 0.25cm; padding-bottom:0.25cm;  display:block; margin-left:0.6cm; padding-left:0.25cm; "><h3 class="clickabletree"><a class="clickabletree" href="javascript:toggleList('s_1.1.1')">[+/-]</a><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/small/instruction.png" align="middle" alt="INSTRUCTION" /><span title="Detalles del medicamento, vacuna u otro producto terapéutico junto a sus instrucciones de uso.">Orden de medicamentos
+				<font color="#C0C0C0"> [0..*] 
+				</font></span></h3><div id="s_1.1.1" class="expandable" style="border: 1px solid #ACACAC; margin-right:0.25cm; margin-bottom: 0.25cm; padding-bottom:0.25cm;  display:block; margin-left:0.6cm; padding-left:0.25cm; "><p class="clickabletree"><a class="clickabletree" href="javascript:toggleList('s_1.1.1.1')">[+/-]</a><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/activity.png" align="middle" alt="ACTIVITY" /><span title="Instrucción para un medicamento en particular, vacuna u otro producto terapéutico, incluyendo dosis y frecuencia.">Orden
+				<font color="#C0C0C0">
+				</font></span></p><div id="s_1.1.1.1" class="expandable" style=" display:block; margin-left:0.6cm; padding-left:0.25cm; "><p class="clickabletree"><img src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/timing.png" align="middle" height="16" width="16" alt="Instruction timing" /><span title="instruction.timing">Instruction timing [1]</span></p><p class="clickabletree"><a class="clickabletree" href="javascript:toggleList('s_1.1.1.1.1')">[+/-]</a><span title="@ internal @">description [1]
+							</span></p><div id="s_1.1.1.1.1" class="expandable" style=" display:block; margin-left:0.6cm; padding-left:0.25cm; "><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/choice.png" align="middle" alt="ELEMENT" /><span title="El medicamento, vacuna o producto terapéutico que es ordenado a ser administrado al o usado por el paciente. Debe ser un dato codificado de ser posible.">Medicamento
+				<font color="#C0C0C0"> [1] 
+				</font><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" />  <textarea rows="1" cols="15" style="vertical-align: top;" name="Medicamentoat0003"> </textarea><b>  OR  </b><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" />  <input size="18" readonly="true" value="Terminology subset" style="color: lightgray; font-style: italic;" name="Medicamentoat0003" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Texto narrativo con la descripción de cuánto, cuándo y cómo aplicar el medicamento, vacuna u otro producto terapéutico.">Indicaciones generales
+				<font color="#C0C0C0">
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Indicaciones generalesat0009"> </textarea></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Descripción de la cantidad y unidades del medicamento, vacuna u otro producto terapéutico a usada o aplicada cada vez que el medicamento es aplicado.">Dosis
+				<font color="#C0C0C0">
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Dosisat0005"> </textarea></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Temporización de las dosis, pudiendo incluir frecuencia y detalles como la relación a comidas.">Temporización
+				<font color="#C0C0C0">
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Temporizaciónat0008"> </textarea></span></p><p class="clickabletree"><a class="clickabletree" href="javascript:toggleList('s_1.1.1.1.1.7')">[+/-]</a><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/cluster.png" align="middle" alt="CLUSTER" /><span title="Detalles estructurados de temporización del uso o aplicación del medicamento, vacuna u otro producto terapéutico">Temporización estructurada
+				<font color="#C0C0C0">
+				</font></span></p><div id="s_1.1.1.1.1.7" class="expandable" style="border: 1px solid #E0E0E0; display:block; margin-left: 0.8cm; padding-left: 0.3cm; margin-top: 0.15cm; padding-bottom: 0.25cm; margin-right: 0.25cm; margin-bottom: 0.05cm; "><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/truefalse.png" align="middle" alt="ELEMENT" /><span title="El tiempo de aplicación depende de las condiciones del paciente y de sus síntomas.">Cuando sea necesario
+				<font color="#C0C0C0">
+				</font>  <input name="Cuando sea necesarioat0029" type="checkbox" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Condición bajo la cuál se requiere el comienzo de la aplicación o uso del medicamento.">Criterio de comienzo
+				<font color="#C0C0C0"> [0..*] 
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Criterio de comienzoat0011"> </textarea></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/datetime.png" align="middle" alt="ELEMENT" /><span title="Fecha con tiempo opcional donde se comienza a usar el medicamento, vacuna u otro producto terapéutico.">Fecha de comienzo
+				<font color="#C0C0C0">
+				</font>  <input size="9" name="Fecha de comienzoat0012" value="14/07/2015" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Condición bajo la cual detenerse la administración o uso del medicamento.">Criterio de finalización
+				<font color="#C0C0C0"> [0..*] 
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Criterio de finalizaciónat0016"> </textarea></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/datetime.png" align="middle" alt="ELEMENT" /><span title="Fecha con tiempo opcional de cuándo se detuvo la aplicación o uso del medicamento.">Fecha de parada
+				<font color="#C0C0C0">
+				</font>  <input size="9" name="Fecha de paradaat0013" value="14/07/2015" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/duration.png" align="middle" alt="ELEMENT" /><span title="Periodo de tiempo en el cual debe administrarse o usarse el medicamento.">Duración del tratamiento
+				<font color="#C0C0C0">
+				</font>  <input size="-2" name="Duración del tratamientoat0014" value="" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/duration.png" align="middle" alt="ELEMENT" /><span title="Duración del tratamiento previo donde se aplicó el mismo medicamento.">Duración del tratamiento previo
+				<font color="#C0C0C0">
+				</font>  <input size="-2" name="Duración del tratamiento previoat0047" value="" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/count.png" align="middle" alt="ELEMENT" /><span title="Número total de dosis del medicamento, vacuna o producto terapéutico a ser usado o administrado.">Número de administraciones
+				<font color="#C0C0C0">
+				</font>  <input size="4" name="Número de administracionesat0015" style="color: gray;" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/truefalse.png" align="middle" alt="ELEMENT" /><span title="El medicamento es de tratamiento prolongado y va a ser re-prescripto durante un periodo de tiempo.">Tratamiento prolongado
+				<font color="#C0C0C0">
+				</font>  <input name="Tratamiento prolongadoat0017" type="checkbox" /></span></p></div><!--1.1.1.1.1.7--><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Declaración adicional de cómo utilizar el medicamento.">Instrucciones adicionales
+				<font color="#C0C0C0"> [0..*] 
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Instrucciones adicionalesat0044"> </textarea></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Motivo para indicar el medicamento.">Indicaciones clínicas
+				<font color="#C0C0C0"> [0..*] 
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Indicaciones clínicasat0018"> </textarea></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Cualquier información adicional que pueda ser necesaria para asegurar la continuidad del suministro, justificación de la dosis y temporización actuales, o factores de seguridad y uso apropiado del medicamento.">Comentario
+				<font color="#C0C0C0"> [0..*] 
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Comentarioat0035"> </textarea></span></p><p class="clickabletree"><a class="clickabletree" href="javascript:toggleList('s_1.1.1.1.1.13')">[+/-]</a><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/cluster.png" align="middle" alt="CLUSTER" /><span title="Información para quien dispensará el medicamento.">Dispensación
+				<font color="#C0C0C0">
+				</font></span></p><div id="s_1.1.1.1.1.13" class="expandable" style="border: 1px solid #E0E0E0; display:block; margin-left: 0.8cm; padding-left: 0.3cm; margin-top: 0.15cm; padding-bottom: 0.25cm; margin-right: 0.25cm; margin-bottom: 0.05cm; "><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/count.png" align="middle" alt="ELEMENT" /><span title="Cantidad de veces que el medicamento debe ser recargado o dispensado sin una nueva prescripción.">Número de repeticiones
+				<font color="#C0C0C0">
+				</font>  <input size="4" name="Número de repeticionesat0025" style="color: gray;" value="    &gt;=0" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/duration.png" align="middle" alt="ELEMENT" /><span title="Intervalo mínimo de tiempo entre repeticiones de dispensación del medicamento.">Intervalo mínimo entre repeticiones
+				<font color="#C0C0C0">
+				</font>  <input size="-2" name="Intervalo mínimo entre repeticionesat0046" value="" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/truefalse.png" align="middle" alt="ELEMENT" /><span title="Indica si se permite o no la sustitución del medicamento prescrito, por una marca diferente del mismo medicamento, vacuna o producto terapéutico, donde se han establecido como bioequivalentes, al momento de dispensar o aplicar el medicamento.">Sustitución de marca permitida
+				<font color="#C0C0C0">
+				</font>  <input name="Sustitución de marca permitidaat0026" type="checkbox" /></span></p><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/text.png" align="middle" alt="ELEMENT" /><span title="Instrucciones adicionales para la persona que dispensa el medicamento.">Instrucciones de dispensación
+				<font color="#C0C0C0">
+				</font>  <textarea rows="1" cols="15" style="vertical-align: top;" name="Instrucciones de dispensaciónat0028"> </textarea></span></p></div><!--1.1.1.1.1.13--><!--keeps this div not empty--></div><!--s1.1.1.1.1--><!--keeps this div not empty--></div><!--s1.1.1.1--><p class="clickabletree"><a class="clickabletree" href="javascript:toggleList('s_1.1.1.1.1')">[+/-]</a><span title="@ internal @">protocol [1]
+							</span></p><div id="s_1.1.1.1.1" class="expandable" style=" display:block; margin-left:0.6cm; padding-left:0.25cm; "><p class="clickabletree"><img class="image" src="file:///C:/Program%20Files/Ocean%20Informatics/Template%20Designer/Html/pics/archetypes/datatypes/small/id.png" align="middle" alt="ELEMENT" /><span title="Identificador utilizado en un sistema externo, y asociado con esta prescripción de medicamento.">Identificador para la instrucción del medicamento
+				<font color="#C0C0C0"> [0..*] 
+				</font>  </span></p><!--keeps this div not empty--></div><!--s1.1.1.1.1--><!--keeps this div not empty--></div><!--s1.1.1--><!--keeps this div not empty--></div><!--s1.1--></div><!--keeps this div not empty--></div></div></body></html><!--HTML automatically generated by Operational Template To HTML Tree transform v1.2 (26 March 2010).-->
