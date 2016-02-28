@@ -1,0 +1,88 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-CLUSTER.obra_social.v1
+
+concept
+	[at0000]	-- Obra social
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Obra social">
+			use = <"Información de obra social y plan, descriptivo para solicitud de estudios y procedimientos.">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"4F587F6BA25FFE7EBCD4FBE9EDF57010">
+	>
+
+definition
+	CLUSTER[at0000] matches {	-- Obra social
+		items cardinality matches {1..*; unordered} matches {
+			ELEMENT[at0001] occurrences matches {0..1} matches {	-- Obra social
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[ac0001]}		-- Obras sociales
+					}
+				}
+			}
+			ELEMENT[at0002] occurrences matches {0..1} matches {	-- Plan
+				value matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[ac0002]}		-- Plan válido con respecto a la obra social
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	terminologies_available = <"TABLAS_MAESTRAS", ...>
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Obra social">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Obra social">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"Plan">
+					description = <"*">
+				>
+			>
+		>
+	>
+	constraint_definitions = <
+		["es"] = <
+			items = <
+				["ac0001"] = <
+					text = <"Obras sociales">
+					description = <"Nombres codificados de obras sociales válidas">
+				>
+				["ac0002"] = <
+					text = <"Plan válido con respecto a la obra social">
+					description = <"Plan válido con respecto a la obra social">
+				>
+			>
+		>
+	>
+	constraint_bindings = <
+		["TABLAS_MAESTRAS"] = <
+			items = <
+				["ac0001"] = <terminology:TABLAS_MAESTRAS?subset=obras_sociales>
+				["ac0002"] = <terminology:TABLAS_MAESTRAS?subset=plan_obra_social>
+			>
+		>
+	>
