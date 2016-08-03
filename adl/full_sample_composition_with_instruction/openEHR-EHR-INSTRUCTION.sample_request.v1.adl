@@ -1,0 +1,136 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-INSTRUCTION.sample_request.v1
+
+concept
+	[at0000]	-- Request
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Sample request">
+			use = <"Sample request">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Sample request">
+			use = <"Sample request">
+			misuse = <"">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"E3EE5253E6EF9D2B8E1FAF74F0B4981B">
+	>
+
+definition
+	INSTRUCTION[at0000] matches {	-- Request
+		activities cardinality matches {0..*; unordered} matches {
+			ACTIVITY[at0001] occurrences matches {0..1} matches {	-- Current Activity
+				action_archetype_id matches {/openEHR-EHR-ACTION\.sample_action\.v1/}
+				description matches {
+					ITEM_TREE[at0002] matches {	-- Tree
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0003] matches {	-- Service requested
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {[local::]}
+									}
+								}
+							}
+							ELEMENT[at0004] occurrences matches {0..1} matches {	-- Duration
+								value matches {
+									DV_DURATION matches {
+										value matches {PTM/|>=PT0M|}
+									}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Urgent
+								value matches {
+									DV_BOOLEAN matches {
+										value matches {True, False}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Pedido">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"Current Activity">
+				>
+				["at0002"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Servicio pedido">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Duración">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Urgente">
+					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Request">
+					description = <"Request">
+				>
+				["at0001"] = <
+					text = <"Current Activity">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0003"] = <
+					text = <"Service requested">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Duration">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Urgent">
+					description = <"">
+				>
+			>
+		>
+	>

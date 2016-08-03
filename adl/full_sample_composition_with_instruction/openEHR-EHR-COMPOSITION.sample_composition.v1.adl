@@ -1,0 +1,98 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.sample_composition.v1
+
+concept
+	[at0000]	-- Sample composition
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Sample composition">
+			use = <"Sample composition">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*Sample composition(es)">
+			use = <"*Sample composition(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"8E5F1F1C8EA5197E35BA8E5E2422CAAB">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Sample composition
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		context matches {
+			EVENT_CONTEXT matches {
+				other_context matches {
+					ITEM_TREE[at0002] matches {*}
+				}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype INSTRUCTION[at0001] occurrences matches {0..*} matches {	-- Request
+				include
+					archetype_id/value matches {/openEHR-EHR-INSTRUCTION\.sample_request(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sample composition">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Pedido">
+					description = <"*">
+				>
+				["at0002"] = <
+					text = <"*Arbol(es)">
+					description = <"*@ internal @(es)">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sample composition">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Request">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+			>
+		>
+	>

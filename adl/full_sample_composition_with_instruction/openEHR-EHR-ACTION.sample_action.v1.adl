@@ -1,0 +1,133 @@
+﻿archetype (adl_version=1.4)
+	openEHR-EHR-ACTION.sample_action.v1
+
+concept
+	[at0000]	-- Sample action
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"sample action">
+			use = <"sample action">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*sample action(es)">
+			use = <"*sample action(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"810F6B425C06CFC0AA9C6C737A83ED85">
+	>
+
+definition
+	ACTION[at0000] matches {	-- Sample action
+		ism_transition matches {
+			ISM_TRANSITION[at0003] matches {	-- Planned
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[openehr::526]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[local::at0003]}		-- Planned
+					}
+				}
+			}
+			ISM_TRANSITION[at0004] matches {	-- Completed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[openehr::532]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[local::at0004]}		-- Completed
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {	-- Tree
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Comment
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sample action">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Comment">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Planeado">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Completado">
+					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Sample action">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Comment">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Planned">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Completed">
+					description = <"">
+				>
+			>
+		>
+	>
