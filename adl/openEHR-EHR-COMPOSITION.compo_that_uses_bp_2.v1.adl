@@ -1,0 +1,75 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.compo_that_uses_bp_2.v1
+
+concept
+	[at0000]	-- *Compo that uses bp 2(es)
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"compo that uses BP 1">
+			use = <"compo that uses BP 1">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"compo that uses BP 2">
+			use = <"compo that uses BP 2">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"98D7BB80862F3C3162CC523AC15D7C07">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- *Compo that uses bp 2(es)
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype OBSERVATION occurrences matches {0..*} matches {
+				include
+					archetype_id/value matches {/openEHR-EHR-OBSERVATION\.blood_pressure(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Compo that uses bp 2">
+					description = <"unknown">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Compo that uses bp 2(es)">
+					description = <"*unknown(es)">
+				>
+			>
+		>
+	>
