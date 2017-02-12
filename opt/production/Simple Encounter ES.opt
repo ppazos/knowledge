@@ -5,7 +5,7 @@
     <terminology_id>
       <value>ISO_639-1</value>
     </terminology_id>
-    <code_string>en</code_string>
+    <code_string>es</code_string>
   </language>
   <description>
     <original_author id="Original Author">Not Specified</original_author>
@@ -27,7 +27,7 @@
         <terminology_id>
           <value>ISO_639-1</value>
         </terminology_id>
-        <code_string>en</code_string>
+        <code_string>es</code_string>
       </language>
       <purpose>Not Specified</purpose>
     </details>
@@ -329,24 +329,24 @@
           <value>openEHR-EHR-EVALUATION.reason_for_encounter.v1</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">The reason for initiation of any healthcare encounter or contact by the individual who is the subject of care.</items>
-          <items id="text">Reason for encounter</items>
+          <items id="description">Motivo del paciente por el cual se inició un encuentro clínico o contacto.</items>
+          <items id="text">Motivo de consulta</items>
         </term_definitions>
         <term_definitions code="at0001">
           <items id="description">@ internal @</items>
           <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="comment">Coding of the 'Contact type' with a terminology is desirable, where possible. Examples include: pre-employment medical, routine antenatal visit, women's health check, pre-operative assessment, or annual medical check-up.
-</items>
-          <items id="description">Identification of the type, or administrative category, of healthcare sought or required by the subject of care.</items>
-          <items id="text">Contact type</items>
+          <items id="comment">*Coding of the 'Contact type' with a terminology is desirable, where possible. Examples include: pre-employment medical, routine antenatal visit, women's health check, pre-operative assessment, or annual medical check-up.
+(en)</items>
+          <items id="description">Identificación del tipo o categoría administrativa por la cuál el paciente busca asistencia médica.</items>
+          <items id="text">Tipo de contacto</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="comment">Coding of the 'Presenting problem' with a terminology is desirable, where possible. Clinical or social reasons for seeking healthcare can include health issues, symptoms or physical signs. Examples: health issues - desire to quit smoking, domestic violence; symptoms - abdominal pain, shortness of breath; physical signs - an altered conscious state. 'Chief complaint' may be used as a valid synonym for 'Presenting problem' in templates.
- </items>
-          <items id="description">Identification of the clinical or social problem motivating the subject of care to seeking healthcare.</items>
-          <items id="text">Presenting problem</items>
+          <items id="comment">*Coding of the 'Presenting problem' with a terminology is desirable, where possible. Clinical or social reasons for seeking healthcare can include health issues, symptoms or physical signs. Examples: health issues - desire to quit smoking, domestic violence; symptoms - abdominal pain, shortness of breath; physical signs - an altered conscious state. 'Chief complaint' may be used as a valid synonym for 'Presenting problem' in templates.
+ (en)</items>
+          <items id="description">Problema o síntoma reportado por el paciente, que da inicio a la consulta médica</items>
+          <items id="text">Problema presentado</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
@@ -1510,248 +1510,248 @@
               <value>openEHR-EHR-OBSERVATION.blood_pressure.v1</value>
             </archetype_id>
             <term_definitions code="at0000">
-              <items id="description">The local measurement of arterial blood pressure which is a surrogate for arterial pressure in the systemic circulation.  Most commonly, use of the term 'blood pressure' refers to measurement of brachial artery pressure in the upper arm.</items>
-              <items id="text">Blood Pressure</items>
+              <items id="description">Medida de la presión arterial</items>
+              <items id="text">Presión arterial</items>
             </term_definitions>
             <term_definitions code="at0001">
-              <items id="description">History Structural node.</items>
-              <items id="text">history</items>
+              <items id="description">*History Structural node.(en)</items>
+              <items id="text">*history(en)</items>
             </term_definitions>
             <term_definitions code="at0003">
               <items id="description">@ internal @</items>
               <items id="text">blood pressure</items>
             </term_definitions>
             <term_definitions code="at0004">
-              <items id="description">Peak systemic arterial blood pressure  - measured in systolic or contraction phase of the heart cycle.</items>
-              <items id="text">Systolic</items>
+              <items id="description">Presión arterial sistólica</items>
+              <items id="text">Sistólica</items>
             </term_definitions>
             <term_definitions code="at0005">
-              <items id="description">Minimum systemic arterial blood pressure - measured in the diastolic or relaxation phase of the heart cycle.</items>
-              <items id="text">Diastolic</items>
+              <items id="description">Presión arterial diastólica</items>
+              <items id="text">Diastólica</items>
             </term_definitions>
             <term_definitions code="at0006">
-              <items id="description">Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.</items>
-              <items id="text">Any event</items>
+              <items id="description">*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)</items>
+              <items id="text">*Any event(en)</items>
             </term_definitions>
             <term_definitions code="at0007">
               <items id="description">@ internal @</items>
               <items id="text">state structure</items>
             </term_definitions>
             <term_definitions code="at0008">
-              <items id="description">The position of the subject at the time of measurement.</items>
-              <items id="text">Position</items>
+              <items id="description">Posición del paciente en el momento de la medida</items>
+              <items id="text">Posición</items>
             </term_definitions>
             <term_definitions code="at0011">
-              <items id="description">List structure.</items>
-              <items id="text">Tree</items>
+              <items id="description">*List structure.(en)</items>
+              <items id="text">*Tree(en)</items>
             </term_definitions>
             <term_definitions code="at0013">
-              <items id="comment">Perloff D, Grim C, Flack J, Frohlich ED, Hill M, McDonald M, Morgenstern BZ. Human blood pressure determination by sphygmomanometry. Circulation 1993;88;2460-2470. </items>
-              <items id="description">The size of the cuff used for blood pressure measurement.</items>
-              <items id="text">Cuff size</items>
+              <items id="comment">*Perloff D, Grim C, Flack J, Frohlich ED, Hill M, McDonald M, Morgenstern BZ. Human blood pressure determination by sphygmomanometry. Circulation 1993;88;2460-2470. (en)</items>
+              <items id="description">Tamaño del manguito utilizado para medir la presión</items>
+              <items id="text">Tamaño del manguito</items>
             </term_definitions>
             <term_definitions code="at0014">
-              <items id="description">Simple body site where blood pressure was measured.</items>
-              <items id="text">Location of measurement</items>
+              <items id="description">*Simple body site where blood pressure was measured.(en)</items>
+              <items id="text">*Location of measurement(en)</items>
             </term_definitions>
             <term_definitions code="at0015">
-              <items id="description">A cuff used for an adult thigh.</items>
-              <items id="text">Adult Thigh</items>
+              <items id="description">El tamaño del manguito es para un muslo adulto 20cm x 42cm aprox</items>
+              <items id="text">Muslo adulto</items>
             </term_definitions>
             <term_definitions code="at0016">
-              <items id="description">A cuff for adults with larger arms.</items>
-              <items id="text">Large Adult</items>
+              <items id="description">El tamaño del manguito es de un adulto grande 16cm x 38cm aprox</items>
+              <items id="text">Adulto grande</items>
             </term_definitions>
             <term_definitions code="at0017">
-              <items id="description">A cuff that is standard for an adult.</items>
-              <items id="text">Adult</items>
+              <items id="description">El tamaño del manguito es para un adulto promedio 13cm x 30cm aprox</items>
+              <items id="text">Adulto</items>
             </term_definitions>
             <term_definitions code="at0025">
-              <items id="description">The right arm of the person.</items>
-              <items id="text">Right arm</items>
+              <items id="description">Brazo derecho del paciente</items>
+              <items id="text">Brazo derecho</items>
             </term_definitions>
             <term_definitions code="at0026">
-              <items id="description">The left arm of the person.</items>
-              <items id="text">Left arm</items>
+              <items id="description">Brazo izquierdo del paciente</items>
+              <items id="text">Brazo izquierdo</items>
             </term_definitions>
             <term_definitions code="at0027">
-              <items id="description">The right thigh of the person.</items>
-              <items id="text">Right thigh</items>
+              <items id="description">Muslo derecho del paciente</items>
+              <items id="text">Muslo derecho</items>
             </term_definitions>
             <term_definitions code="at0028">
-              <items id="description">The left thigh of the person.</items>
-              <items id="text">Left thigh</items>
+              <items id="description">Muslo izquierdo del paciente</items>
+              <items id="text">Muslo izquierdo</items>
             </term_definitions>
             <term_definitions code="at0033">
-              <items id="description">Additional narrative about the measurement, not captured in other fields.</items>
-              <items id="text">Comment</items>
+              <items id="description">*Additional narrative about the measurement, not captured in other fields.(en)</items>
+              <items id="text">*Comment(en)</items>
             </term_definitions>
             <term_definitions code="at1000">
-              <items id="description">Standing at the time of blood pressure measurement.</items>
-              <items id="text">Standing</items>
+              <items id="description">El paciente está parado en el momento de la medida</items>
+              <items id="text">Parado</items>
             </term_definitions>
             <term_definitions code="at1001">
-              <items id="description">Sitting (for example on bed or chair) at the time of blood pressure measurement.</items>
-              <items id="text">Sitting</items>
+              <items id="description">El paciente está sentado en el momento de la medida</items>
+              <items id="text">Sentado</items>
             </term_definitions>
             <term_definitions code="at1002">
-              <items id="description">Reclining at the time of blood pressure measurement.</items>
-              <items id="text">Reclining</items>
+              <items id="description">El paciente está reclinado en el momento de la medida</items>
+              <items id="text">Reclinado</items>
             </term_definitions>
             <term_definitions code="at1003">
-              <items id="description">Lying flat at the time of blood pressure measurement.</items>
-              <items id="text">Lying</items>
+              <items id="description">El paciente está acostado en el momento de la meidda</items>
+              <items id="text">Acostado</items>
             </term_definitions>
             <term_definitions code="at1005">
-              <items id="comment">PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.</items>
-              <items id="description">The craniocaudal tilt of the surface on which the person is lying at the time of measurement.</items>
-              <items id="text">Tilt</items>
+              <items id="comment">*PLEASE NOTE: '°' is a valid UCUM unit. Please use 'deg' as the correct unit.(en)</items>
+              <items id="description">*The craniocaudal tilt of the surface on which the person is lying at the time of measurement.(en)</items>
+              <items id="text">*Tilt(en)</items>
             </term_definitions>
             <term_definitions code="at1006">
-              <items id="description">The average arterial pressure that occurs over the entire course of the heart contraction and relaxation cycle.</items>
-              <items id="text">Mean arterial pressure</items>
+              <items id="description">Promedio del a presión arterial que ocurre en el ciclo completo de contracción y relajación del corazón.</items>
+              <items id="text">Presión arterial media</items>
             </term_definitions>
             <term_definitions code="at1007">
-              <items id="description">The difference between the systolic and diastolic pressure.</items>
-              <items id="text">Pulse pressure</items>
+              <items id="description">Diferencia entre la presión sistólica y la diastólica.</items>
+              <items id="text">Presión del pulso</items>
             </term_definitions>
             <term_definitions code="at1008">
-              <items id="description">A cuff used for a small adult.</items>
-              <items id="text">Small Adult</items>
+              <items id="description">Tamaño del manguito para un adulto pequeño 10cm x 24cm aprox</items>
+              <items id="text">Adulto pequeño</items>
             </term_definitions>
             <term_definitions code="at1009">
-              <items id="description">A cuff that is appropriate for a child or adult with a thin arm.</items>
-              <items id="text">Paediatric/Child</items>
+              <items id="description">Tamaño del manguito pediátrico 8cm x 21cm aprox</items>
+              <items id="text">Pediátrico</items>
             </term_definitions>
             <term_definitions code="at1010">
-              <items id="description">Record which Korotkoff sound is used for determining diastolic pressure using auscultative method.</items>
-              <items id="text">Diastolic endpoint</items>
+              <items id="description">Registra que sonido de Korotkoff se utiliza para determinar la presión arterial utilizando el método auscultativo</items>
+              <items id="text">Punto final diastólica</items>
             </term_definitions>
             <term_definitions code="at1011">
-              <items id="description">The fourth Korotkoff sound is identified as an abrupt muffling of sounds.</items>
-              <items id="text">Phase IV</items>
+              <items id="description">El cuarto sonido de Korotkoff es identificado como amortiguación abrupta de sonidos</items>
+              <items id="text">Fase IV</items>
             </term_definitions>
             <term_definitions code="at1012">
-              <items id="description">The fifth Korotkoff sound is identified by absence of sounds as the cuff pressure drops below the diastolic blood pressure.</items>
-              <items id="text">Phase V</items>
+              <items id="description">El quinto sonido de Korotkoff se identifica con la ausencia de sonidos a medida que la presión del manguito decrece por debajo de la presión diastólica</items>
+              <items id="text">Fase V</items>
             </term_definitions>
             <term_definitions code="at1014">
-              <items id="description">Lying flat with some lateral tilt, usually angled towards the left side.   Commonly required in the last trimester of pregnancy to relieve aortocaval compression.</items>
-              <items id="text">Lying with tilt to left</items>
+              <items id="description">Acostado con inclinación lateral hacia la izquierda</items>
+              <items id="text">Acostado inclinado hacia la izquierda</items>
             </term_definitions>
             <term_definitions code="at1018">
-              <items id="description">A cuff used for infants.</items>
-              <items id="text">Infant</items>
+              <items id="description">Tamaño del manguito para infantes 5cm x 15cm aprox</items>
+              <items id="text">Infante</items>
             </term_definitions>
             <term_definitions code="at1019">
-              <items id="description">A cuff used for a neonate, assuming cuff is the appropriate size for maturity and birthweight of the neonate.</items>
-              <items id="text">Neonatal</items>
+              <items id="description">Tamaño del manguito para un neonato</items>
+              <items id="text">Neonato</items>
             </term_definitions>
             <term_definitions code="at1020">
-              <items id="description">The right wrist of the subject.</items>
-              <items id="text">Right wrist</items>
+              <items id="description">Muñeca derecha del paciente</items>
+              <items id="text">Muñeca derecha</items>
             </term_definitions>
             <term_definitions code="at1021">
-              <items id="description">The left wrist of the subject.</items>
-              <items id="text">Left wrist</items>
+              <items id="description">Muñeca izquierda del paciente</items>
+              <items id="text">Muñeca izquierda</items>
             </term_definitions>
             <term_definitions code="at1025">
-              <items id="description">Details about sphygmomanometer or other device used to measure the blood pressure.</items>
-              <items id="text">Device</items>
+              <items id="description">Detalles del tensiómetro u otro dispositivo utilizado para medir la presión arterial</items>
+              <items id="text">Dispositivo</items>
             </term_definitions>
             <term_definitions code="at1026">
-              <items id="description">The right ankle of the subject.</items>
-              <items id="text">Right ankle</items>
+              <items id="description">Tobillo derecho del paciente</items>
+              <items id="text">Tobillo derecho</items>
             </term_definitions>
             <term_definitions code="at1030">
-              <items id="description">Details about physical activity undertaken at the time of blood pressure measurement.</items>
-              <items id="text">Exertion</items>
+              <items id="description">Detalles sobre actividad física durante la medida de la presión arterial</items>
+              <items id="text">Ejercicio</items>
             </term_definitions>
             <term_definitions code="at1031">
-              <items id="description">The left ankle of the subject.</items>
-              <items id="text">Left ankle</items>
+              <items id="description">Tobillo izquierdo del paciente</items>
+              <items id="text">Tobillo izquierdo</items>
             </term_definitions>
             <term_definitions code="at1032">
-              <items id="description">A finger of the subject.</items>
-              <items id="text">Finger</items>
+              <items id="description">*A finger of the subject.(en)</items>
+              <items id="text">*Finger(en)</items>
             </term_definitions>
             <term_definitions code="at1033">
-              <items id="comment">Use 'Location of measurement' to select from a value set of common sites or free text choice.  Use SLOT for 'Structured measurement location' to record unusual sites, such as intra-arterial catheter sites. 'Specific location' has been deprecated.</items>
-              <items id="description">Body location where blood pressure is measured.</items>
-              <items id="text">Location</items>
+              <items id="comment">*Use 'Location of measurement' to select from a value set of common sites or free text choice.  Use SLOT for 'Structured measurement location' to record unusual sites, such as intra-arterial catheter sites. 'Specific location' has been deprecated.(en)</items>
+              <items id="description">*Body location where blood pressure is measured.(en)</items>
+              <items id="text">*Location(en)</items>
             </term_definitions>
             <term_definitions code="at1034">
-              <items id="description">Data element deprecated, and replaced by free text component of 'Location of measurement' data type.</items>
-              <items id="text">X - Specific location</items>
+              <items id="description">*Data element deprecated, and replaced by free text component of 'Location of measurement' data type.(en)</items>
+              <items id="text">*X - Specific location(en)</items>
             </term_definitions>
             <term_definitions code="at1035">
-              <items id="description">Method of measurement of blood pressure.</items>
-              <items id="text">Method</items>
+              <items id="description">Método de medida de la presión</items>
+              <items id="text">Método</items>
             </term_definitions>
             <term_definitions code="at1036">
-              <items id="description">Method of measuring blood pressure externally, using a stethoscope and Korotkoff sounds.</items>
-              <items id="text">Auscultation</items>
+              <items id="description">Método de medida externo, utilizando un estetoscopio y los sonidos de Korotkoff</items>
+              <items id="text">Auscultación</items>
             </term_definitions>
             <term_definitions code="at1037">
-              <items id="description">Method of measuring blood pressure externally, using palpation (usually of the brachial or radial arteries).</items>
-              <items id="text">Palpation</items>
+              <items id="description">Método de medida externo, utilizando palpación, en general de la arteria braquial o radial</items>
+              <items id="text">Palpación</items>
             </term_definitions>
             <term_definitions code="at1038">
-              <items id="description">Formula used to calculate the Mean Arterial Pressure (if recorded in data).</items>
-              <items id="text">Mean arterial pressure formula</items>
+              <items id="description">Fórmula utilizada para medir la presión arterial media</items>
+              <items id="text">Fórmula de la presión arterial media</items>
             </term_definitions>
             <term_definitions code="at1039">
-              <items id="description">Method of measuring blood pressure externally, using a blood pressure machine.</items>
-              <items id="text">Machine</items>
+              <items id="description">Método de medida externo mediante un dispositivo o máquina</items>
+              <items id="text">Dispositivo</items>
             </term_definitions>
             <term_definitions code="at1040">
-              <items id="description">Method of measuring blood pressure internally ie involving penetration of the skin and measuring inside blood vessels.</items>
-              <items id="text">Invasive</items>
+              <items id="description">Método de medida interno, involucra penetración de la piel y medida dentro de los vasos sanguíneos</items>
+              <items id="text">Invasivo</items>
             </term_definitions>
             <term_definitions code="at1042">
-              <items id="description">Estimate of the average blood pressure over a 24 hour period.</items>
-              <items id="text">24 hour average</items>
+              <items id="description">Estimación de la presión arterial promedio dentro de las 24 horas</items>
+              <items id="text">promedio en 24 horas</items>
             </term_definitions>
             <term_definitions code="at1043">
-              <items id="description">Sleep status - supports interpretation of 24 hour ambulatory blood pressure records.</items>
-              <items id="text">Sleep status</items>
+              <items id="description">Soporta la interpretación de los registros de presión arterial ambulatoria de 24 horas</items>
+              <items id="text">Estado de sueño</items>
             </term_definitions>
             <term_definitions code="at1044">
-              <items id="description">Subject is fully conscious.</items>
-              <items id="text">Alert &amp; awake</items>
+              <items id="description">El paciente está totalmente conciente</items>
+              <items id="text">alerta y despierto</items>
             </term_definitions>
             <term_definitions code="at1045">
-              <items id="description">Subject is in the natural state of bodily rest.</items>
-              <items id="text">Sleeping</items>
+              <items id="description">El paciente está durmiendo</items>
+              <items id="text">Durmiendo</items>
             </term_definitions>
             <term_definitions code="at1051">
-              <items id="description">A toe of the subject.</items>
-              <items id="text">Toe</items>
+              <items id="description">*A toe of the subject.(en)</items>
+              <items id="text">*Toe(en)</items>
             </term_definitions>
             <term_definitions code="at1052">
-              <items id="description">Comment on and record other incidental factors that may be contributing to the blood pressure measurement.  For example, level of anxiety or 'white coat syndrome'; pain or fever; changes in atmospheric pressure etc.</items>
-              <items id="text">Confounding factors</items>
+              <items id="description">Registro de factores que pueden afectar la medida</items>
+              <items id="text">Factores de confusión</items>
             </term_definitions>
             <term_definitions code="at1053">
-              <items id="description">Invasive measurement via transducer access line within an artery.</items>
-              <items id="text">Intra-arterial</items>
+              <items id="description">*Invasive measurement via transducer access line within an artery.(en)</items>
+              <items id="text">*Intra-arterial(en)</items>
             </term_definitions>
             <term_definitions code="at1054">
-              <items id="description">Formula used to calculate the systolic pressure from from mean arterial pressure (if recorded in data).</items>
-              <items id="text">Systolic pressure formula</items>
+              <items id="description">*Formula used to calculate the systolic pressure from from mean arterial pressure (if recorded in data).(en)</items>
+              <items id="text">*Systolic pressure formula(en)</items>
             </term_definitions>
             <term_definitions code="at1055">
-              <items id="description">Formula used to calculate the diastolic pressure from mean arterial pressure (if recorded in data).</items>
-              <items id="text">Diastolic pressure formula</items>
+              <items id="description">*Formula used to calculate the diastolic pressure from mean arterial pressure (if recorded in data).(en)</items>
+              <items id="text">*Diastolic pressure formula(en)</items>
             </term_definitions>
             <term_definitions code="at1057">
-              <items id="description">Structured anatomical location of where the measurement was taken.</items>
-              <items id="text">Structured measurement location</items>
+              <items id="description">*Structured anatomical location of where the measurement was taken.(en)</items>
+              <items id="text">*Structured measurement location(en)</items>
             </term_definitions>
             <term_definitions code="at1058">
-              <items id="comment">For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.</items>
-              <items id="description">Additional information required to capture local context or to align with other reference models/formalisms.</items>
-              <items id="text">Extension</items>
+              <items id="comment">*For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)</items>
+              <items id="description">*Additional information required to capture local context or to align with other reference models/formalisms.(en)</items>
+              <items id="text">*Extension(en)</items>
             </term_definitions>
             <term_bindings terminology="SNOMED-CT">
               <items code="at0000">
@@ -4682,64 +4682,64 @@
               <value>openEHR-EHR-OBSERVATION.body_weight.v1</value>
             </archetype_id>
             <term_definitions code="at0000">
-              <items id="description">Measurement of the body weight of an individual.</items>
-              <items id="text">Body weight</items>
+              <items id="description">Medición del peso corporal de un individuo.</items>
+              <items id="text">Peso corporal</items>
             </term_definitions>
             <term_definitions code="at0001">
-              <items id="description">@ internal @</items>
-              <items id="text">Simple</items>
+              <items id="description">*@ internal @(en)</items>
+              <items id="text">*Simple(en)</items>
             </term_definitions>
             <term_definitions code="at0002">
-              <items id="description">@ internal @</items>
-              <items id="text">history</items>
+              <items id="description">*@ internal @(en)</items>
+              <items id="text">*history(en)</items>
             </term_definitions>
             <term_definitions code="at0003">
-              <items id="description">Any event.</items>
-              <items id="text">Any event</items>
+              <items id="description">Cualquier evento.</items>
+              <items id="text">Cualquier evento.</items>
             </term_definitions>
             <term_definitions code="at0004">
-              <items id="description">The weight of the individual.</items>
-              <items id="text">Weight</items>
+              <items id="description">Peso del individuo.</items>
+              <items id="text">Peso</items>
             </term_definitions>
             <term_definitions code="at0008">
-              <items id="description">@ internal @</items>
-              <items id="text">state structure</items>
+              <items id="description">*@ internal @(en)</items>
+              <items id="text">*state structure(en)</items>
             </term_definitions>
             <term_definitions code="at0009">
-              <items id="description">Description of the state of dress of the person at the time of weighing.</items>
-              <items id="text">State of Dress</items>
+              <items id="description">Descripción de la indumentaria del sujeto en el momento de la medición.</items>
+              <items id="text">Indumentaria</items>
             </term_definitions>
             <term_definitions code="at0010">
-              <items id="description">Clothing which may add significantly to weight, including shoes.</items>
-              <items id="text">Fully clothed, including shoes</items>
+              <items id="description">La indumentaria, incluyendo calzado, puede incrementar el peso de forma significativa.</items>
+              <items id="text">Totalmente vestido incluyendo calzado</items>
             </term_definitions>
             <term_definitions code="at0011">
-              <items id="description">Clothing which will not add to weight significantly.</items>
-              <items id="text">Lightly clothed/underwear</items>
+              <items id="description">La indumentaria no genera un incremento significativo del peso.</items>
+              <items id="text">Indumentaria ligera/Ropa interior</items>
             </term_definitions>
             <term_definitions code="at0013">
-              <items id="description">Without any clothes.</items>
-              <items id="text">Naked</items>
+              <items id="description">Sin ropa.</items>
+              <items id="text">Desnudo</items>
             </term_definitions>
             <term_definitions code="at0015">
-              <items id="description">@ internal @</items>
-              <items id="text">protocol structure</items>
+              <items id="description">*@ internal @(en)</items>
+              <items id="text">*protocol structure(en)</items>
             </term_definitions>
             <term_definitions code="at0017">
-              <items id="description">Wearing only a nappy - can add significant weight.</items>
-              <items id="text">Nappy/diaper</items>
+              <items id="description">Únicamente con un pañal. Puede incrementar el peso de forma significativa.</items>
+              <items id="text">Pañales</items>
             </term_definitions>
             <term_definitions code="at0020">
-              <items id="description">Details about the weighing device.</items>
-              <items id="text">Device</items>
+              <items id="description">Detalles acerca del dispositivo de pesada.</items>
+              <items id="text">Dispositivo</items>
             </term_definitions>
             <term_definitions code="at0024">
-              <items id="description">Comment about the measurement of weight.</items>
-              <items id="text">Comment</items>
+              <items id="description">Observaciones acerca de la medición del peso.</items>
+              <items id="text">Observaciones</items>
             </term_definitions>
             <term_definitions code="at0025">
-              <items id="description">Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.</items>
-              <items id="text">Confounding Factors</items>
+              <items id="description">Registrar cualquier consideración que pueda influir en la medida del peso ej: amputaciones, momento del ciclo menstrual, etc. (en)</items>
+              <items id="text">Factores de alteración</items>
             </term_definitions>
           </children>
           <children xsi:type="ARCHETYPE_SLOT">
@@ -4788,16 +4788,16 @@
           <value>openEHR-EHR-SECTION.vital_signs.v0</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">A group of observations that are recorded at the same time and record the blood pressure, pulse, temperature and other readings.</items>
-          <items id="text">Vital signs</items>
+          <items id="description">Grupo de observaciones registradas al mismo tiempo para distintos signos vitales (presión arterial, frecuencia cardíaca, temperatura, etc.)</items>
+          <items id="text">Signos vitales</items>
         </term_definitions>
         <term_definitions code="at0001">
-          <items id="description">Vital signs observations.</items>
-          <items id="text">Vital signs</items>
+          <items id="description">Observaciones y medidas de signos vitales</items>
+          <items id="text">Signos vitales</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="description">Textual summary of vital signs.</items>
-          <items id="text">Synopsis</items>
+          <items id="description">Resumen textual de signos vitales</items>
+          <items id="text">Resumen</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
@@ -5222,60 +5222,56 @@
           <value>openEHR-EHR-OBSERVATION.exam.v1</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">Findings observed during the physical examination of a subject of care.</items>
-          <items id="text">Physical examination findings</items>
+          <items id="description">Hallazgos observados durante la examinación física del paciente</items>
+          <items id="text">Hallazgos de la examinación física</items>
         </term_definitions>
         <term_definitions code="at0001">
           <items id="description">@ internal @</items>
           <items id="text">Event Series</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="description">Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.</items>
-          <items id="text">Any event</items>
+          <items id="description">*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.(en)</items>
+          <items id="text">*Any event(en)</items>
         </term_definitions>
         <term_definitions code="at0003">
           <items id="description">@ internal @</items>
           <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="comment">May be used to record a narrative summary of the complete clinical examination or key aspects of clinical examination findings, which will be supported by structured data. Details of specific structured findings can be included using CLUSTER archetypes in the 'Examination Detail' slot. This data element may be used to capture legacy data that is not available in a structured format.</items>
-          <items id="description">Narrative description of the overall findings observed during a physical examination of a patient.</items>
-          <items id="text">Description</items>
+          <items id="description">Descripción narrativa del total de los hallazgos durante la examinación física del paciente</items>
+          <items id="text">Descripción</items>
         </term_definitions>
         <term_definitions code="at0005">
-          <items id="comment">Detailed clinical findings will be recorded as CLUSTER archetypes which can be nested within this SLOT to represent the fractal nature of clinical examination and allow for variation in clinician's requirements for examination documentation. For example: CLUSTER.palpation_of_uterus, CLUSTER.palpation_of_cervix and CLUSTER.palpation_of_fetus can be nested in this slot or within each other to represent the specific  requirements of clinicians working in the obstetric domains - content, priorities and level of detail will differ depending on clinical context, professional background and specialty.</items>
-          <items id="description">Structured details of the physical examination.</items>
-          <items id="text">Examination detail</items>
+          <items id="description">Detalles estructurados de la examinación física</items>
+          <items id="text">Detalles de la examinación</items>
         </term_definitions>
         <term_definitions code="at0006">
-          <items id="comment">Coding with a terminology is preferred, if possible. For example, 'normal examination' or 'tympanic membrane perforation'. </items>
-          <items id="description">Single word, phrase or brief description which represents the clinical meaning and significance of the physical examination findings.</items>
-          <items id="text">Interpretation</items>
+          <items id="description">Descripción corta que representa el significado clínico de los hallazgos</items>
+          <items id="text">Interpretación</items>
         </term_definitions>
         <term_definitions code="at0007">
           <items id="description">@ internal @</items>
           <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0008">
-          <items id="description">Description of any incidental factors that may have contributed to the physical examination findings.</items>
-          <items id="text">Confounding factors</items>
+          <items id="description">Descripción de los factores que pueden haber obstruido o dificultado la examinación física y los hallazgos</items>
+          <items id="text">Factores de confusión</items>
         </term_definitions>
         <term_definitions code="at0009">
           <items id="description">@ internal @</items>
           <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0010">
-          <items id="description">Details about any device used during the physical examination.</items>
-          <items id="text">Device details</items>
+          <items id="description">Detalles sobre cualquier dispositivo utilizado durante la examinación física</items>
+          <items id="text">Detalles del dispositivo</items>
         </term_definitions>
         <term_definitions code="at0011">
-          <items id="description">Additional narrative about the overall physical examination findings not captured in other fields.</items>
-          <items id="text">Comment</items>
+          <items id="description">Información narrativa adicional sobre los hallazgos durante la examinación física</items>
+          <items id="text">Comentario</items>
         </term_definitions>
         <term_definitions code="at0012">
-          <items id="comment">e.g. Local information requirements or additional metadata to align with FHIR or CIMI equivalents.</items>
-          <items id="description">Additional information required to capture local content or to align with other reference models/formalisms.</items>
-          <items id="text">Extension</items>
+          <items id="description">Información adicional requerida para registrar contenido local o alinear con otros modelos o formalismos</items>
+          <items id="text">Extensión</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
@@ -5960,120 +5956,113 @@
           <value>openEHR-EHR-EVALUATION.problem_diagnosis.v1</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="comment">Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.</items>
-          <items id="description">Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.</items>
-          <items id="text">Problem/Diagnosis</items>
+          <items id="comment">*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum, with increasing levels of detail and supportive evidence usually providing weight towards the label of 'diagnosis'.(en)</items>
+          <items id="description">*Details about a single identified health condition, injury, disability or any other issue which impacts on the physical, mental and/or social well-being of an individual.(en)</items>
+          <items id="text">*Problem/Diagnosis(en)</items>
         </term_definitions>
         <term_definitions code="at0001">
           <items id="description">@ internal @</items>
           <items id="text">structure</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="comment">Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.</items>
-          <items id="description">Identification of the problem or diagnosis, by name.</items>
-          <items id="text">Problem/Diagnosis name</items>
+          <items id="comment">*Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.(en)</items>
+          <items id="description">*Identification of the problem or diagnosis, by name.(en)</items>
+          <items id="text">*Problem/Diagnosis name(en)</items>
         </term_definitions>
         <term_definitions code="at0003">
-          <items id="comment">Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as "Age at time of clinical recognition" should be converted to a date using the subject's date of birth.</items>
-          <items id="description">Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.</items>
-          <items id="text">Date/time clinically recognised</items>
+          <items id="description">Fecha y hora, estimado o real, cuándo el problema/diagnóstico es detectado por un profesional de la salud</items>
+          <items id="text">Momento de reconocimiento del problema</items>
         </term_definitions>
         <term_definitions code="at0005">
-          <items id="comment">If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.</items>
-          <items id="description">An assessment of the overall severity of the problem or diagnosis.</items>
-          <items id="text">Severity</items>
+          <items id="description">Valoración de la severidad del problema/diagnóstico</items>
+          <items id="text">Severidad</items>
         </term_definitions>
         <term_definitions code="at0009">
-          <items id="comment">Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis.</items>
-          <items id="description">Narrative description about the problem or diagnosis.</items>
-          <items id="text">Clinical description</items>
+          <items id="description">Descripción narrativa del problema/diagnóstico</items>
+          <items id="text">Descripción clínica</items>
         </term_definitions>
         <term_definitions code="at0012">
-          <items id="comment">Coding of the name of the anatomical location with a terminology is preferred, where possible.
+          <items id="comment">*Coding of the name of the anatomical location with a terminology is preferred, where possible.
 Use this data element to record precoordinated anatomical locations. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype. Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. 
 
-</items>
-          <items id="description">Identification of a simple body site for the location of the problem or diagnosis.</items>
-          <items id="text">Body site</items>
+(en)</items>
+          <items id="description">*Identification of a simple body site for the location of the problem or diagnosis.(en)</items>
+          <items id="text">*Body site(en)</items>
         </term_definitions>
         <term_definitions code="at0030">
-          <items id="comment">Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support. Data captured/imported as "Age at time of resolution" should be converted to a date using the subject's date of birth.
-</items>
-          <items id="description">Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.</items>
-          <items id="text">Date/time of resolution</items>
+          <items id="description">Día y hora, estimado o real, en que el problema/diagnóstico fue resuelto o entró en remisión</items>
+          <items id="text">Momento de resolución</items>
         </term_definitions>
         <term_definitions code="at0032">
           <items id="description">@ internal @</items>
           <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0039">
-          <items id="comment">Use this SLOT to insert the CLUSTER.anatomical_location or CLUSTER.relative_location archetypes if the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations.
+          <items id="comment">*Use this SLOT to insert the CLUSTER.anatomical_location or CLUSTER.relative_location archetypes if the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations.
 
 If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, use of this SLOT becomes redundant.
 
-</items>
-          <items id="description">A structured anatomical location for the problem or diagnosis.</items>
-          <items id="text">Structured body site</items>
+(en)</items>
+          <items id="description">*A structured anatomical location for the problem or diagnosis.(en)</items>
+          <items id="text">*Structured body site(en)</items>
         </term_definitions>
         <term_definitions code="at0043">
-          <items id="comment">May include structured detail about the grading or staging of the diagnosis; diagnostic criteria, classification criteria or formal severity assessments such as Common Terminology Criteria for Adverse Events.</items>
-          <items id="description">Details that are additionally required to record as unique attributes of this problem or diagnosis.</items>
-          <items id="text">Specific details</items>
+          <items id="description">Detalles adicionales para el problema/diagnóstico</items>
+          <items id="text">Detalles específicos</items>
         </term_definitions>
         <term_definitions code="at0046">
-          <items id="comment">Use status or context qualifiers with care, as they are variably used in practice and interoperability cannot be assured unless usage is clearly defined with the community of use. For example: active status - active, inactive, resolved, in remission; evolution status - initial, interim/working, final; temporal status - current, past; episodicity status - first, new, ongoing; admission status - admission, discharge; or priority status - primary, secondary.</items>
-          <items id="description">Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process.</items>
-          <items id="text">Status</items>
+          <items id="comment">*Use status or context qualifiers with care, as they are variably used in practice and interoperability cannot be assured unless usage is clearly defined with the community of use. For example: active status - active, inactive, resolved, in remission; evolution status - initial, interim/working, final; temporal status - current, past; episodicity status - first, new, ongoing; admission status - admission, discharge; or priority status - primary, secondary.(en)</items>
+          <items id="description">*Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process.(en)</items>
+          <items id="text">*Status(en)</items>
         </term_definitions>
         <term_definitions code="at0047">
-          <items id="description">The problem or diagnosis does not interfere with normal activity or may cause damage to health if left untreated.</items>
-          <items id="text">Mild</items>
+          <items id="description">El problema tiene severidad leve</items>
+          <items id="text">Leve</items>
         </term_definitions>
         <term_definitions code="at0048">
-          <items id="description">The problem or diagnosis causes interference with normal activity or will damage health if left untreated.</items>
-          <items id="text">Moderate</items>
+          <items id="description">El problema tiene severidad moderada</items>
+          <items id="text">Moderada</items>
         </term_definitions>
         <term_definitions code="at0049">
-          <items id="description">The problem or diagnosis prevents normal activity or will seriously damage health if left untreated.</items>
-          <items id="text">Severe</items>
+          <items id="description">El problema tiene severidad severo</items>
+          <items id="text">Severo</items>
         </term_definitions>
         <term_definitions code="at0069">
-          <items id="description">Additional narrative about the problem or diagnosis not captured in other fields.</items>
-          <items id="text">Comment</items>
+          <items id="description">Comentario narrativo adicional sobre el problema/diagnóstico no capturado en otros campos</items>
+          <items id="text">Comentario</items>
         </term_definitions>
         <term_definitions code="at0070">
-          <items id="description">The date this problem or diagnosis was last updated.</items>
-          <items id="text">Last updated</items>
+          <items id="description">Fecha en la que el problema/diagnóstico fue actualizado</items>
+          <items id="text">Última actualización</items>
         </term_definitions>
         <term_definitions code="at0071">
-          <items id="comment">For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.</items>
-          <items id="description">Additional information required to capture local content or to align with other reference models/formalisms.</items>
-          <items id="text">Extension</items>
+          <items id="description">Información adicional requerida para capturar el contenido local o alinear con otros modelos o formalismos para el problema/diagnóstico</items>
+          <items id="text">Extensión</items>
         </term_definitions>
         <term_definitions code="at0072">
-          <items id="description">Narrative description about the course of the problem or diagnosis since onset.</items>
-          <items id="text">Course description</items>
+          <items id="description">Descripción narrativa del progreso del problema/diagnóstico desde su comienzo</items>
+          <items id="text">Progreso</items>
         </term_definitions>
         <term_definitions code="at0073">
-          <items id="description">The level of confidence in the identification of the diagnosis.</items>
-          <items id="text">Diagnostic certainty</items>
+          <items id="description">*The level of confidence in the identification of the diagnosis.(en)</items>
+          <items id="text">*Diagnostic certainty(en)</items>
         </term_definitions>
         <term_definitions code="at0074">
-          <items id="description">The diagnosis has been identified with a low level of certainty.</items>
-          <items id="text">Suspected</items>
+          <items id="description">*The diagnosis has been identified with a low level of certainty.(en)</items>
+          <items id="text">*Suspected(en)</items>
         </term_definitions>
         <term_definitions code="at0075">
-          <items id="description">The diagnosis has been identified with a high level of certainty.</items>
-          <items id="text">Probable</items>
+          <items id="description">*The diagnosis has been identified with a high level of certainty.(en)</items>
+          <items id="text">*Probable(en)</items>
         </term_definitions>
         <term_definitions code="at0076">
-          <items id="description">The diagnosis has been confirmed against recognised criteria.</items>
-          <items id="text">Confirmed</items>
+          <items id="description">*The diagnosis has been confirmed against recognised criteria.(en)</items>
+          <items id="text">*Confirmed(en)</items>
         </term_definitions>
         <term_definitions code="at0077">
-          <items id="comment">Data captured/imported as "Age at onset" should be converted to a date using the subject's date of birth.</items>
-          <items id="description">Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.</items>
-          <items id="text">Date/time of onset</items>
+          <items id="description">*Estimated or actual date/time that signs or symptoms of the problem/diagnosis were first observed.
+(en)</items>
+          <items id="text">*Date of onset(en)</items>
         </term_definitions>
       </children>
       <cardinality>
@@ -6094,17 +6083,17 @@ If the anatomical location is included in the Problem/diagnosis name via precoor
       <value>Simple Encounter</value>
     </template_id>
     <term_definitions code="at0000">
-      <items id="description">Interaction, contact or care event between a subject of care and healthcare provider(s).</items>
-      <items id="text">Encounter</items>
+      <items id="description">Interacción, contacto o evento de cuidado entre un paciente y un proveedor de salud.</items>
+      <items id="text">Encuentro</items>
     </term_definitions>
     <term_definitions code="at0001">
       <items id="description">@ internal @</items>
       <items id="text">Tree</items>
     </term_definitions>
     <term_definitions code="at0002">
-      <items id="comment">e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.</items>
-      <items id="description">Additional information required to capture local context or to align with other reference models/formalisms.</items>
-      <items id="text">Extension</items>
+      <items id="comment">*e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.(en)</items>
+      <items id="description">Información adicional requerida para capturar el contexto local o alinear con otros modelos de referencia o formalismos.</items>
+      <items id="text">Extensión</items>
     </term_definitions>
   </definition>
 </template>
