@@ -1,0 +1,128 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.internal_ref_test.v1
+
+concept
+	[at0000]	-- *Internal ref test(es)
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Internal ref test">
+			use = <"Internal ref test">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*Internal ref test(es)">
+			use = <"*Internal ref test(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"09B7E2933260D30028B828984B58C4D4">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- *Internal ref test(es)
+		data matches {
+			HISTORY[at0001] matches {	-- *Event Series(es)
+				events cardinality matches {1..*; unordered} matches {
+					POINT_EVENT[at0002] occurrences matches {0..1} matches {	-- *Cualquier evento(es)
+						data matches {
+							ITEM_TREE[at0003] matches {	-- *Arbol(es)
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- *Sample node(es)
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+					INTERVAL_EVENT[at0005] occurrences matches {0..1} matches {	-- *Cualquier evento(es)
+						data matches {
+							use_node ITEM_TREE /data[at0001]/events[at0002]/data[at0003]	-- /data[*Event Series(es)]/events[*Cualquier evento(es)]/data[*Arbol(es)]
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Internal ref test">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Cualquier evento">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Sample node">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Cualquier evento">
+					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Internal ref test(es)">
+					description = <"*unknown(es)">
+				>
+				["at0001"] = <
+					text = <"*Event Series(es)">
+					description = <"*@ internal @(es)">
+				>
+				["at0002"] = <
+					text = <"*Cualquier evento(es)">
+					description = <"**(es)">
+				>
+				["at0003"] = <
+					text = <"*Arbol(es)">
+					description = <"*@ internal @(es)">
+				>
+				["at0004"] = <
+					text = <"*Sample node(es)">
+					description = <"**(es)">
+				>
+				["at0005"] = <
+					text = <"*Cualquier evento(es)">
+					description = <"**(es)">
+				>
+			>
+		>
+	>
