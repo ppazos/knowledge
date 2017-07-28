@@ -1,0 +1,431 @@
+<version xmlns="http://schemas.openehr.org/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ORIGINAL_VERSION">
+  <contribution>
+    <id xsi:type="HIER_OBJECT_ID">
+      <value>639fd254-28c2-44c8-890f-9265fdec455b</value>
+    </id>
+    <namespace>EHR::COMMON</namespace>
+    <type>CONTRIBUTION</type>
+  </contribution>
+  <commit_audit>
+    <system_id>CABOLABS_EHR</system_id>
+    <committer xsi:type="PARTY_IDENTIFIED">
+      <external_ref>
+        <id xsi:type="HIER_OBJECT_ID">
+          <value>e490495d-64fe-49c5-8ded-383313dbe588</value>
+        </id>
+        <namespace>DEMOGRAPHIC</namespace>
+        <type>PERSON</type>
+      </external_ref>
+      <name>Dr. House</name>
+    </committer>
+    <time_committed>
+      <value>20170706T203248,674-0300</value>
+    </time_committed>
+    <change_type>
+      <value>creation</value>
+      <defining_code>
+        <terminology_id>
+          <value>openehr</value>
+        </terminology_id>
+        <code_string>249</code_string>
+      </defining_code>
+    </change_type>
+  </commit_audit>
+  <uid>
+    <value>5cfba0ad-eef2-441e-82a2-fce102c05e7b::EMR_APP::1</value>
+  </uid>
+  <data xsi:type="COMPOSITION" archetype_node_id="openEHR-EHR-COMPOSITION.problem_list.v1">
+    <name>
+      <value>Problem list</value>
+    </name>
+    <archetype_details>
+      <archetype_id>
+        <value>openEHR-EHR-COMPOSITION.problem_list.v1</value>
+      </archetype_id>
+      <template_id>
+        <value>Problem List EN</value>
+      </template_id>
+      <rm_version>1.0.2</rm_version>
+    </archetype_details>
+    <language>
+      <terminology_id>
+        <value>ISO_639-1</value>
+      </terminology_id>
+      <code_string>en</code_string>
+    </language>
+    <territory>
+      <terminology_id>
+        <value>ISO_3166-1</value>
+      </terminology_id>
+      <code_string>UY</code_string>
+    </territory>
+    <category>
+      <value>persistent</value>
+      <defining_code>
+        <terminology_id>
+          <value>openehr</value>
+        </terminology_id>
+        <code_string>431</code_string>
+      </defining_code>
+    </category>
+    <composer xsi:type="PARTY_IDENTIFIED">
+      <external_ref>
+        <id xsi:type="HIER_OBJECT_ID">
+          <value>5e059392-6134-4749-99f2-762308ecefdc</value>
+        </id>
+        <namespace>DEMOGRAPHIC</namespace>
+        <type>PERSON</type>
+      </external_ref>
+      <name>Dr. Yamamoto</name>
+    </composer>
+    <context>
+      <start_time>
+        <value>20170706T203248,724-0300</value>
+      </start_time>
+      <setting>
+        <value>Hospital D</value>
+        <defining_code>
+          <terminology_id>
+            <value>openehr</value>
+          </terminology_id>
+          <code_string>229</code_string>
+        </defining_code>
+      </setting>
+    </context>
+    <content archetype_node_id="openEHR-EHR-EVALUATION.problem_diagnosis.v1" xsi:type="EVALUATION">
+      <name>
+        <value>Problem/Diagnosis</value>
+      </name>
+      <language>
+        <terminology_id>
+          <value>ISO_639-1</value>
+        </terminology_id>
+        <code_string>en</code_string>
+      </language>
+      <encoding>
+        <terminology_id>
+          <value>Unicode</value>
+        </terminology_id>
+        <code_string>UTF-8</code_string>
+      </encoding>
+      <subject xsi:type="PARTY_SELF" />
+      <protocol archetype_node_id="at0032" xsi:type="ITEM_TREE">
+        <name>
+          <value>Tree</value>
+        </name>
+        <items archetype_node_id="at0070" xsi:type="ELEMENT">
+          <name>
+            <value>Last updated</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>20170706T203248,765-0300</value>
+          </value>
+        </items><!-- SLOT NOT PROCESSED -->
+      </protocol>
+      <data archetype_node_id="at0001" xsi:type="ITEM_TREE">
+        <name>
+          <value>structure</value>
+        </name>
+        <items archetype_node_id="at0002" xsi:type="ELEMENT">
+          <name>
+            <value>Problem/Diagnosis name</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>bYMXHndxjIfnTpEQnWlPuWkoMUMtPSkrEOXLjhbOvtMSwAX X.ayI,FpLbqzXsEFoerz,VcMHnVlqYYodbLIgXbHHwaOybN jMPqiNobXsCuHPlWwctIiaNxKSYuqSzpfGHWMusPhPDBWuWDEOvrwAQuKLViUBRzfHaNaTnydGjGc.IwJGuwXfBEAogmGXXzLUjjhPaLlv drUJkcIBVQRVKjnnrzRXeI XZMZZRnZBbWyNPbkuQQ,XkecZrzqf</value>
+          </value>
+        </items>
+        <items archetype_node_id="at0009" xsi:type="ELEMENT">
+          <name>
+            <value>Clinical description</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>aWqVlSwirzBgE,fdhaaTiYNwatugwFXwyQ,atqQLlPcNuZHbUS.lompZ,ufDNkfBOcnZixUjOyDIMECrzabzdhngyuCzY UKsIObhig clsTRnUbXG b JcbqFmpExEFApiJKSbqnQbZaz,RnziqHRxZrwxsfMlsfSlH Ep,IpILuxIHdY ZfWoxnokkDk.yrVpLwLbwmpOrPFApZjUBVmF,Y,jkQCZNcNI,jGGoFUgIPGtDFehQXTztA LkkF,</value>
+          </value>
+        </items>
+        <items archetype_node_id="at0012" xsi:type="ELEMENT">
+          <name>
+            <value>Body site</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>sLMlzsQMCYPVVamwHuzDZotxqymmqffZBgmygG,lTVQhOctzhcKHGkmgsLroLqKouOnt.hC O,EdLE.XZjoLsKwoKkGnkWjcMrNbyBxAOaxUVuestmV,ZquVnAnsTHFtRi gLCzHHYCnLv.dabZGRCBjy.,rAuDEFaxWYgok.O nQxGCGLjNTQwfIToBfvFsPDyfEpTTwegfDbBZuY.ENPEHiGcxqffGjlZYiDuWYEmvcwcrvDFEbR,QSDXZvRl</value>
+          </value>
+        </items>
+        <items archetype_node_id="openEHR-EHR-CLUSTER.anatomical_location.v1" xsi:type="CLUSTER">
+          <name>
+            <value>Anatomical location</value>
+          </name>
+          <items archetype_node_id="at0001" xsi:type="ELEMENT">
+            <name>
+              <value>Body site name</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>KNmiqzNWyyFfWKlHNfGS.L,sovZZBpS,cySRuUKCo.EfOJuzYCC.KGNvtmhYDydspfyWhVnY.NbSXMsCuLSAVxqno,Hr.gQJQCSDxsdOyDcKfCjq. rbW.BZnzASLwcWAEn.YWTqENrBGZsnMxvvPwsjSZMqSPuxYXOqHHmIDIjsDKlBWvnyfQw,ASaqbJgMMaQygBlqZ.pBAwIfPuIXxJROQLMbzbDpWWSGDAOqbqOyHNZNDNnYCuHzpDnAlpz</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0065" xsi:type="ELEMENT">
+            <name>
+              <value>Specific site</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>BMRqvMrkmHreOJGKfmoEGqkFjbYlYTnhDSowKvm.v VsZFjpRW,JYQjJDJAJSpdkVLvWUOcC.hOoJVeajZPLVbQDmoADwRYyqxuhunUIdpbfSxkDtWt.bTaaMdrFqQeJBlCsJSWbWlSZEgbjHwHBJMudJxZblvvSIDIdUsALikCuhdz.wrUWUrrVidqTlKaWm.jdwLyYZrd SoiKtywbm iEwdY.J,GTruCsMSnTLghpWktDAOdQxBkMDfrKjyJ</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0002" xsi:type="ELEMENT">
+            <name>
+              <value>Laterality</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Left</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0003</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0064" xsi:type="ELEMENT">
+            <name>
+              <value>Aspect</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Medial</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0067</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0055" xsi:type="ELEMENT">
+            <name>
+              <value>Anatomical Line</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Midline</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0062</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0023" xsi:type="ELEMENT">
+            <name>
+              <value>Description</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>abkGgWmpaIvZiMRqbrDfItTrllFPV.ZyvWLCnkkNQjJ pJtkTnCwysbypWRoNgDwXsIapelRUwENMyNnJNBBd IDEdQBnWhBPLYJCeYORjvSJTXVoANilthpb.jQopbaJFsEsEpMhNvUvjSuwFegGsbZqJFKiaYJrdjpQIHzcWHfZcZppPsRT xzqNZfaj.fB.Rs.JLtdqbTFkdbBqUQiVOQrDfwwsmPFrQZGKd lfuWHedRcnrzyVW b HXuNC</value>
+            </value>
+          </items><!-- SLOT NOT PROCESSED --><!-- SLOT NOT PROCESSED -->
+        </items>
+        <items archetype_node_id="at0077" xsi:type="ELEMENT">
+          <name>
+            <value>Date/time of onset</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>20170706T203248,905-0300</value>
+          </value>
+        </items>
+        <items archetype_node_id="at0003" xsi:type="ELEMENT">
+          <name>
+            <value>Date/time clinically recognised</value>
+          </name>
+          <value xsi:type="DV_DATE_TIME">
+            <value>20170706T203248,905-0300</value>
+          </value>
+        </items>
+        <items archetype_node_id="at0005" xsi:type="ELEMENT">
+          <name>
+            <value>Severity</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Mild</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0047</code_string>
+            </defining_code>
+          </value>
+        </items><!-- SLOT NOT PROCESSED -->
+        <items archetype_node_id="at0072" xsi:type="ELEMENT">
+          <name>
+            <value>Course description</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>jXcsRYHFTMjdpHTpPjWoAHqbLsxBpUI. ,S.oQEbPRuc,hQpIcDgxczbJOg.BzQjjQhQaFpdTyXSdwepN,aysgyhXpDmdKPeVDEydgHNgBqIHpAkKGRwudYyHTQKdvxDoNgpkRlDQIvpEQBu,ZejvBoVG PnUFtsvvwaGsQuxiDUYHPLOlAYa.aISonr.a.eiXLMDdLbEupIwphGOal,U.zeBgFEGtF dvAXQvbDBtNnJhqC,GcBDJEGerPZzE.</value>
+          </value>
+        </items>
+        <items archetype_node_id="at0030" xsi:type="ELEMENT">
+          <name>
+            <value>Date/time of resolution</value>
+          </name>
+          <value xsi:type="DV_DATE">
+            <value>20170706</value>
+          </value>
+        </items>
+        <items archetype_node_id="openEHR-EHR-CLUSTER.problem_status.v0" xsi:type="CLUSTER">
+          <name>
+            <value>Problem/Diagnosis status</value>
+          </name>
+          <items archetype_node_id="at0004" xsi:type="ELEMENT">
+            <name>
+              <value>Diagnostic status</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Preliminary</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0016</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0060" xsi:type="ELEMENT">
+            <name>
+              <value>Current/Past?</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Current</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0062</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0003" xsi:type="ELEMENT">
+            <name>
+              <value>Active/Inactive?</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Active</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0026</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0083" xsi:type="ELEMENT">
+            <name>
+              <value>Resolution status</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Resolved</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0084</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0001" xsi:type="ELEMENT">
+            <name>
+              <value>Episodicity</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>New episode</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0034</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0071" xsi:type="ELEMENT">
+            <name>
+              <value>First occurrence?</value>
+            </name>
+            <value xsi:type="DV_BOOLEAN">
+              <value>true</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0077" xsi:type="ELEMENT">
+            <name>
+              <value>Course</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Acute</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0081</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0063" xsi:type="ELEMENT">
+            <name>
+              <value>DRG category</value>
+            </name>
+            <value xsi:type="DV_CODED_TEXT">
+              <value>Principal diagnosis</value>
+              <defining_code>
+                <terminology_id>
+                  <value>local</value>
+                </terminology_id>
+                <code_string>at0064</code_string>
+              </defining_code>
+            </value>
+          </items>
+          <items archetype_node_id="at0073" xsi:type="ELEMENT">
+            <name>
+              <value>Present on admission?</value>
+            </name>
+            <value xsi:type="DV_BOOLEAN">
+              <value>true</value>
+            </value>
+          </items>
+          <items archetype_node_id="at0082" xsi:type="ELEMENT">
+            <name>
+              <value>Unspecified</value>
+            </name>
+            <value xsi:type="DV_TEXT">
+              <value>dmGcPrGRyCxNeNwPVvdPUSmikrwZsjzHpVhoHWRyuRWLvIYiQIKqfvvZLpBQXI LMDGqLLUTDKbRUXO.FNZqjPVZ ajiIYiDLmqGcJkySxHCrvkdoAbeENcgGuZBFw OCFXhBvcziyGuzTfZXATnujdAgpKz.QIpMB TO,ygEsZYlNoGZJeRataQMcbXdGclGNDUPELOFJudbKlDePHVAAbiRkavRML.Lmv,SPuiwaZdWwnjblWdvlbJxRrGRsj</value>
+            </value>
+          </items>
+        </items>
+        <items archetype_node_id="at0073" xsi:type="ELEMENT">
+          <name>
+            <value>Diagnostic certainty</value>
+          </name>
+          <value xsi:type="DV_CODED_TEXT">
+            <value>Suspected</value>
+            <defining_code>
+              <terminology_id>
+                <value>local</value>
+              </terminology_id>
+              <code_string>at0074</code_string>
+            </defining_code>
+          </value>
+        </items>
+        <items archetype_node_id="at0069" xsi:type="ELEMENT">
+          <name>
+            <value>Comment</value>
+          </name>
+          <value xsi:type="DV_TEXT">
+            <value>NDexXrJSX .BmAtdlmXUJMlW Xn UusFIHenYc sehZZkjUvcXdnSROIwFBGvKqailbxWKvcPDAYNDzDIlgDLwVAw,EDcinNvStFPxFFBkYF,YBQORaVapmDerTEuTnCcXsDUTJaOQlrfYPPFHBigLXbU.gEaWTn,bOGIbJSYfnWvVOsyuOjPp,klAiFlhAIPoKYqSpgmqYStjGVph.C SuaMcHEyZqavWLVSmkgfNZJKcEB.FFwaltEho  Kvz</value>
+          </value>
+        </items>
+      </data>
+    </content><!-- SLOT NOT PROCESSED --><!-- SLOT NOT PROCESSED --><!-- SLOT NOT PROCESSED --><!-- SLOT NOT PROCESSED -->
+  </data>
+  <lifecycle_state>
+    <value>completed</value>
+    <defining_code>
+      <terminology_id>
+        <value>openehr</value>
+      </terminology_id>
+      <code_string>532</code_string>
+    </defining_code>
+  </lifecycle_state>
+</version>

@@ -1,0 +1,70 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-SECTION.test_indexing_section.v1
+
+concept
+	[at0000]	-- Test indexing section
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*(es)">
+			use = <"*(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"63816EA12F9CCF7255D1C310D6425CCB">
+	>
+
+definition
+	SECTION[at0000] matches {	-- Test indexing section
+		items cardinality matches {0..*; unordered} matches {
+			allow_archetype INSTRUCTION occurrences matches {0..*} matches {
+				include
+					archetype_id/value matches {/openEHR-EHR-INSTRUCTION\.medication_order\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test indexing section">
+					description = <"unknown">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test indexing section">
+					description = <"">
+				>
+			>
+		>
+	>

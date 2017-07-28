@@ -1,0 +1,139 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-ACTION.test_action_multiple_occurence_node.v1
+
+concept
+	[at0000]	-- Test action multiple occurence node
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"test action multiple occurence node">
+			use = <"test action multiple occurence node">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"test action multiple occurence node">
+			use = <"test action multiple occurence node">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"67BFB1D063FA680AD0C273DF561C1EFF">
+	>
+
+definition
+	ACTION[at0000] matches {	-- Test action multiple occurence node
+		ism_transition matches {
+			ISM_TRANSITION[at0004] matches {	-- Activo
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[openehr::245]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[local::at0004]}		-- Activo
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {	-- Arbol
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..*} matches {	-- Texto multiple
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..*} matches {	-- Cantidad multiple
+						value matches {
+							C_DV_QUANTITY <
+								property = <[openehr::125]>
+								list = <
+									["1"] = <
+										units = <"cm[H20]">
+									>
+									["2"] = <
+										units = <"mm[Hg]">
+									>
+									["3"] = <
+										units = <"Pa">
+									>
+								>
+							>
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test action multiple occurence node">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Arbol">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Texto multiple">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Cantidad multiple">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Activo">
+					description = <"Activo">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Test action multiple occurence node(es)">
+					description = <"*(es)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"*Texto multiple(es)">
+					description = <"*(es)">
+				>
+				["at0003"] = <
+					text = <"*Cantidad multiple(es)">
+					description = <"*(es)">
+				>
+				["at0004"] = <
+					text = <"*Activo(es)">
+					description = <"*Activo(es)">
+				>
+			>
+		>
+	>

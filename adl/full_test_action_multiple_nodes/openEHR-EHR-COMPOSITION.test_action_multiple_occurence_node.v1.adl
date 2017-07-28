@@ -1,0 +1,75 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.test_action_multiple_occurence_node.v1
+
+concept
+	[at0000]	-- test action multiple occurence node
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"test action multiple occurence node">
+			use = <"test action multiple occurence node">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"test action multiple occurence node">
+			use = <"test action multiple occurence node">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"1C4BDAF7A4DC0319FFF2E34422DB3794">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- test action multiple occurence node
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype ACTION occurrences matches {0..*} matches {
+				include
+					archetype_id/value matches {/openEHR-EHR-ACTION\.test_action_multiple_occurence_node\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test action multiple occurence node">
+					description = <"unknown">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"test action multiple occurence node">
+					description = <"">
+				>
+			>
+		>
+	>

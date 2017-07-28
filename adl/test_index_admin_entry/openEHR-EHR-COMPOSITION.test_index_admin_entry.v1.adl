@@ -1,0 +1,75 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.test_index_admin_entry.v1
+
+concept
+	[at0000]	-- Test index admin entry
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*(es)">
+			use = <"*(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"0CD5F1AA6705E3415A7463AC51A942AB">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Test index admin entry
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype ADMIN_ENTRY occurrences matches {0..*} matches {
+				include
+					archetype_id/value matches {/openEHR-EHR-ADMIN_ENTRY\.test_index_admin_entry\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test index admin entry">
+					description = <"unknown">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test index admin entry">
+					description = <"">
+				>
+			>
+		>
+	>

@@ -1,0 +1,125 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.test_index_interval_event.v1
+
+concept
+	[at0000]	-- Test index interval event
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*(es)">
+			use = <"*(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"9EE9CF276EC3224FD8C799B18274807C">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Test index interval event
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					INTERVAL_EVENT[at0002] occurrences matches {0..1} matches {	-- Evento
+						math_function matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {[openehr::146]}
+							}
+						}
+						width matches {
+							DV_DURATION matches {
+								value matches {|PT1H|}
+							}
+						}
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Arbol
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Texto
+										value matches {
+											DV_TEXT matches {*}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test index interval event">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Evento">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Arbol">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Texto">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Test index interval event">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Event">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Tree">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Text">
+					description = <"">
+				>
+			>
+		>
+	>

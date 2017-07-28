@@ -1,0 +1,75 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.test_indexing_evaluation.v1
+
+concept
+	[at0000]	-- Test indexing evaluation
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Test indexing evaluation">
+			use = <"Test indexing evaluation">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*Test indexing evaluation(es)">
+			use = <"*Test indexing evaluation(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"6B84AE96F2C527D0A67125069BC84DF0">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Test indexing evaluation
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype EVALUATION occurrences matches {0..*} matches {
+				include
+					archetype_id/value matches {/openEHR-EHR-EVALUATION\.test_indexing_evaluation\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test indexing evaluation">
+					description = <"unknown">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test indexing evaluation">
+					description = <"">
+				>
+			>
+		>
+	>

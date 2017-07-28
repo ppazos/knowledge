@@ -1,0 +1,106 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-ADMIN_ENTRY.test_index_admin_entry.v1
+
+concept
+	[at0000]	-- Test index admin entry
+language
+	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"*(es)">
+			use = <"*(es)">
+			misuse = <"*(es)">
+			copyright = <"*(es)">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"15069F1EB8022AF5E8B02497504C432E">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {	-- Test index admin entry
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Arbol
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Datetime
+						value matches {
+							DV_DATE_TIME matches {*}
+						}
+					}
+					ELEMENT[at0003] occurrences matches {0..1} matches {	-- Count
+						value matches {
+							DV_COUNT matches {
+								magnitude matches {|0..10|}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test index admin entry">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Arbol">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Datetime">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Count">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test index admin entry">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"">
+				>
+				["at0002"] = <
+					text = <"Datetime">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Nuevo elemento">
+					description = <"">
+				>
+			>
+		>
+	>
