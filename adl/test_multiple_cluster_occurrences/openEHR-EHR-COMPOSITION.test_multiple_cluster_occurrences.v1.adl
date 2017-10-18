@@ -1,0 +1,52 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.test_multiple_cluster_occurrences.v1
+
+concept
+	[at0000]	-- Test multiple cluster occurrences
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"test multiple cluster occurrences">
+			use = <"test multiple cluster occurrences">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"DBD66DAE011CFD24BF345B3EDE106F44">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Test multiple cluster occurrences
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::433]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype EVALUATION occurrences matches {0..*} matches {
+				include
+					archetype_id/value matches {/openEHR-EHR-EVALUATION\.test_mutiple_cluster_occurrences(-[a-zA-Z0-9_]+)*\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test multiple cluster occurrences">
+					description = <"unknown">
+				>
+			>
+		>
+	>

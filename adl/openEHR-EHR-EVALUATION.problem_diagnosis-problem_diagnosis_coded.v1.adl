@@ -99,7 +99,7 @@ Common Terminology Criteria for Adverse Events (CTCAE)[Internet]. National Cance
 
 Weed LL. Medical records that guide and teach. <http://www.ncbi.nlm.nih.gov/pubmed/5637758>  N Engl J Med. 1968 Mar 14;278(11):593-600. PubMed PMID: 5637758.">
 		["current_contact"] = <"Heather Leslie, Ocean Informatics, heather.leslie@oceaninformatics.com">
-		["MD5-CAM-1.0.1"] = <"5CD3DC88993AE0754254BB134336909D">
+		["MD5-CAM-1.0.1"] = <"9A348953042D692F45E42F8E6A9A242C">
 	>
 
 definition
@@ -110,7 +110,7 @@ definition
 					ELEMENT[at0002.1] matches {	-- Nombre del problema/diagnóstico
 						value matches {
 							DV_CODED_TEXT matches {
-								defining_code matches {[ac0.1]}		-- *Nombre codificado del diagnostico(en)
+								defining_code matches {[ac0.1]}		-- Nombre codificado del diagnostico
 							}
 						}
 					}
@@ -217,7 +217,7 @@ definition
 	}
 
 ontology
-	terminologies_available = <"ICD10_1998", "SNOMED-CT">
+	terminologies_available = <"SNOMED-CT", ...>
 	term_definitions = <
 		["es"] = <
 			items = <
@@ -226,9 +226,9 @@ ontology
 					description = <"Detalles de una condición o problema de salud que puede afectar física, mental o socialmente al paciente y es identificado por un profesional clínico.">
 				>
 				["at0000.1"] = <
-					comment = <"*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!(en)">
-					text = <"Problema/diagnóstico">
 					description = <"Problema/diagnóstico">
+					text = <"Problema/diagnóstico">
+					comment = <"*Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!(en)">
 				>
 				["at0001"] = <
 					text = <"structure">
@@ -335,76 +335,76 @@ ontology
 		["en"] = <
 			items = <
 				["at0000"] = <
-					description = <"Details about a single identified health condition, injury or issue which impacts on the physical, mental and/or social well-being of an individual.">
-					text = <"Problem/diagnosis">
 					comment = <"Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.">
+					text = <"Problem/diagnosis">
+					description = <"Details about a single identified health condition, injury or issue which impacts on the physical, mental and/or social well-being of an individual.">
 				>
 				["at0000.1"] = <
-					comment = <"Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!">
-					text = <"Problem/diagnosis">
 					description = <"Details about a single identified health condition, injury or issue which impacts on the physical, mental and/or social well-being of an individual.!">
+					text = <"Problem/diagnosis">
+					comment = <"Clear delineation between the scope of a problem versus a diagnosis is not easy to achieve in practice. For the purposes of clinical documentation with this archetype, problem and diagnosis are regarded as a continuum with increasing levels of detail and supportive evidence usually required to support a diagnosis.!">
 				>
 				["at0001"] = <
 					text = <"structure">
 					description = <"@ internal @">
 				>
 				["at0002"] = <
-					description = <"Identification, by name and or code, of the problem or diagnosis.">
-					text = <"Problem/diagnosis name">
 					comment = <"Coding of the name of the problem or diagnosis with a terminology is preferred, where possible.">
+					text = <"Problem/diagnosis name">
+					description = <"Identification, by name and or code, of the problem or diagnosis.">
 				>
 				["at0002.1"] = <
 					text = <"Problem/Diagnosis">
 					description = <"Identifier and name of the problem/diagnosis">
 				>
 				["at0003"] = <
-					description = <"Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.">
-					text = <"Date/time clinically recognised">
 					comment = <"Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.">
+					text = <"Date/time clinically recognised">
+					description = <"Estimated or actual date/time the diagnosis or problem was recognised by a healthcare professional.">
 				>
 				["at0005"] = <
-					description = <"An assessment of the overall severity of the problem or diagnosis.">
-					text = <"Severity">
 					comment = <"If severity is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. Note: more specific grading of severity can be recorded using the Specific details SLOT.">
+					text = <"Severity">
+					description = <"An assessment of the overall severity of the problem or diagnosis.">
 				>
 				["at0009"] = <
-					description = <"Narrative description about the problem or diagnosis.">
-					text = <"Clinical description">
 					comment = <"Use to provide background and context, including evolution, episodes or exacerbations, progress and any other relevant details, about the problem or diagnosis.">
+					text = <"Clinical description">
+					description = <"Narrative description about the problem or diagnosis.">
 				>
 				["at0012"] = <
-					description = <"Record of a simple body site where the problem or diagnosis was located.">
-					text = <"Anatomical location">
 					comment = <"Occurrences for this data element are unbounded to allow for clinical scenarios such as describing a rash in multiple locations but where all of the other attributes are identical. If the requirements for recording the anatomical location are determined at run-time by the application or require more complex modelling such as relative locations then use the CLUSTER.anatomical_location or CLUSTER.relative_location within the 'Structured anatomical location' SLOT in this archetype.
  Use this data element to record precoordinated anatomical locations. If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, this data element becomes redundant. ">
+					text = <"Anatomical location">
+					description = <"Record of a simple body site where the problem or diagnosis was located.">
 				>
 				["at0027"] = <
 					text = <"Related item">
 					description = <"Identification of other diagnoses and problems that have a relationship to the  diagnosis or problem recorded using this archetype instance.">
 				>
 				["at0028"] = <
-					description = <"Identification of the related problem or diagnosis.">
-					text = <"Item">
 					comment = <"Record as text, coded text or a link within the EHR.">
+					text = <"Item">
+					description = <"Identification of the related problem or diagnosis.">
 				>
 				["at0029"] = <
-					description = <"The type of relationship that this problem or diagnosis has to the item.">
-					text = <"Relationship">
 					comment = <"Where no causality or sequence of events is known, this relationship type should be left blank.">
+					text = <"Relationship">
+					description = <"The type of relationship that this problem or diagnosis has to the item.">
 				>
 				["at0030"] = <
-					description = <"Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.">
-					text = <"Date/time of resolution">
 					comment = <"Partial dates are acceptable. If the subject of care is under the age of one year, then the complete date or a minimum of the month and year is necessary to enable accurate age calculations - for example, if used to drive decision support.">
+					text = <"Date/time of resolution">
+					description = <"Estimated or actual date/time of resolution or remission for this problem or diagnosis, as determined by a healthcare professional.">
 				>
 				["at0032"] = <
 					text = <"Tree">
 					description = <"@ internal @">
 				>
 				["at0039"] = <
-					description = <"Slot to contain detailed and structured anatomical location details.">
-					text = <"Structured anatomical location">
 					comment = <"If the anatomical location is included in the Problem/diagnosis name via precoordinated codes, use of this SLOT becomes redundant.">
+					text = <"Structured anatomical location">
+					description = <"Slot to contain detailed and structured anatomical location details.">
 				>
 				["at0040"] = <
 					text = <"Caused by">
@@ -415,18 +415,18 @@ ontology
 					description = <"This value identifies the sequence of events between the related items, but does not assert causality. This can be used for sequelae or late effects.">
 				>
 				["at0043"] = <
-					description = <"Details that are additionally required to record as unique attributes of this problem or diagnosis.">
-					text = <"Specific details">
 					comment = <"May include structured detail about the grading or staging of the diagnosis; diagnostic criteria, classification criteria or formal severity assessments such as Common Terminology Criteria for Adverse Events.">
+					text = <"Specific details">
+					description = <"Details that are additionally required to record as unique attributes of this problem or diagnosis.">
 				>
 				["at0044"] = <
 					text = <"Description">
 					description = <"Narrative description about the item.">
 				>
 				["at0046"] = <
-					description = <"Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process.">
-					text = <"Status">
 					comment = <"Use status or context qualifiers with care, as they are avariably used in practic and interoperability cannot be assured unless usage is clearly defined with the community of use. For example: active status - active, inactive, resolved, in remission; evolution status - initial, interim/working, final; temporal status - current, past; episodicity status - first, new, ongoing; admission status - admission, discharge; or priority status - primary, secondary.">
+					text = <"Status">
+					description = <"Structured details for location-, domain-, episode- or workflow-specific aspects of the diagnostic process.">
 				>
 				["at0047"] = <
 					text = <"Mild">
@@ -449,9 +449,9 @@ ontology
 					description = <"The date this problem or diagnosis was last updated.">
 				>
 				["at0071"] = <
-					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
-					text = <"Extension">
 					comment = <"For example: local information requirements or additional metadata to align with FHIR or CIMI equivalents.">
+					text = <"Extension">
+					description = <"Additional information required to capture local content or to align with other reference models/formalisms.">
 				>
 				["at0072"] = <
 					text = <"Course description">
@@ -464,8 +464,8 @@ ontology
 		["es"] = <
 			items = <
 				["ac0.1"] = <
-					text = <"*Nombre codificado del diagnostico(en)">
-					description = <"*Nombre codificado del diagnostico(en)">
+					text = <"Nombre codificado del diagnostico">
+					description = <"Nombre codificado del diagnostico">
 				>
 			>
 		>
@@ -482,11 +482,6 @@ ontology
 		["SNOMED-CT"] = <
 			items = <
 				["ac0.1"] = <terminology:SNOMED-CT?subset=diagnosticos>
-			>
-		>
-		["ICD10_1998"] = <
-			items = <
-				["ac0.1"] = <terminology:ICD10_1998?subset=diagnosticos>
 			>
 		>
 	>

@@ -1,0 +1,77 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-EVALUATION.test_mutiple_cluster_occurrences.v1
+
+concept
+	[at0000]	-- Test mutiple cluster occurrences
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"test mutiple cluster occurrences">
+			use = <"test mutiple cluster occurrences">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"E5ADF4D7FDC39DBC5DF527ADB409783E">
+	>
+
+definition
+	EVALUATION[at0000] matches {	-- Test mutiple cluster occurrences
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Arbol
+				items cardinality matches {0..*; unordered} matches {
+					CLUSTER[at0002] occurrences matches {0..*} matches {	-- Un cluster
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0005] occurrences matches {0..1} matches {	-- Count
+								value matches {
+									DV_COUNT matches {*}
+								}
+							}
+							ELEMENT[at0003] occurrences matches {0..1} matches {	-- Text
+								value matches {
+									DV_TEXT matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test mutiple cluster occurrences">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Un cluster">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Text">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Count">
+					description = <"*">
+				>
+			>
+		>
+	>

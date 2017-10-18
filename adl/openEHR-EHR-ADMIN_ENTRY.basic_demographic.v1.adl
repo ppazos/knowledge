@@ -1,0 +1,90 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-ADMIN_ENTRY.basic_demographic.v1
+
+concept
+	[at0000]	-- Basic demographic
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"35CF2C5C2BD22D7E72514B6C2ACA4F5D">
+	>
+
+definition
+	ADMIN_ENTRY[at0000] matches {	-- Basic demographic
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Arbol
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Género
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0003, 	-- Masculino
+									at0004, 	-- Femenino
+									at0005]	-- Desconocido
+								}
+							}
+						}
+					}
+					ELEMENT[at0006] occurrences matches {0..1} matches {	-- Fecha de nacimiento
+						value matches {
+							DV_DATE matches {
+								value matches {yyyy-mm-dd}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Basic demographic">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Género">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Masculino">
+					description = <"Masculino">
+				>
+				["at0004"] = <
+					text = <"Femenino">
+					description = <"Femenino">
+				>
+				["at0005"] = <
+					text = <"Desconocido">
+					description = <"Desconocido">
+				>
+				["at0006"] = <
+					text = <"Fecha de nacimiento">
+					description = <"*">
+				>
+			>
+		>
+	>

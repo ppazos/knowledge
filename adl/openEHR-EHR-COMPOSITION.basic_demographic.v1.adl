@@ -1,0 +1,52 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-COMPOSITION.basic_demographic.v1
+
+concept
+	[at0000]	-- Basic demographic
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"1532965CA8FC200EBCEA09C5CEF2013C">
+	>
+
+definition
+	COMPOSITION[at0000] matches {	-- Basic demographic
+		category matches {
+			DV_CODED_TEXT matches {
+				defining_code matches {[openehr::431]}
+			}
+		}
+		content cardinality matches {0..*; unordered} matches {
+			allow_archetype ADMIN_ENTRY occurrences matches {0..*} matches {
+				include
+					archetype_id/value matches {/openEHR-EHR-ADMIN_ENTRY\.basic_demographic\.v1/}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Basic demographic">
+					description = <"unknown">
+				>
+			>
+		>
+	>
