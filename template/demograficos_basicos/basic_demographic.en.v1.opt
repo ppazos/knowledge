@@ -5,7 +5,7 @@
     <terminology_id>
       <value>ISO_639-1</value>
     </terminology_id>
-    <code_string>es</code_string>
+    <code_string>en</code_string>
   </language>
   <description>
     <original_author id="Original Author">Not Specified</original_author>
@@ -27,18 +27,18 @@
         <terminology_id>
           <value>ISO_639-1</value>
         </terminology_id>
-        <code_string>es</code_string>
+        <code_string>en</code_string>
       </language>
       <purpose>Not Specified</purpose>
     </details>
   </description>
   <uid>
-    <value>259e96aa-1a4f-406b-8995-2b43df9a4abc</value>
+    <value>e749b019-c222-41c7-bbae-39dc7f97a824</value>
   </uid>
   <template_id>
-    <value>datos_demograficos.es.v1</value>
+    <value>basic_demographic.en.v1</value>
   </template_id>
-  <concept>Datos demográficos básicos</concept>
+  <concept>Basic demographic</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
@@ -292,32 +292,32 @@
           <value>openEHR-EHR-ADMIN_ENTRY.basic_demographic.v1</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">unknown</items>
-          <items id="text">Datos demográficos básicos</items>
+          <items id="description">*</items>
+          <items id="text">Basic demographic</items>
         </term_definitions>
         <term_definitions code="at0001">
           <items id="description">@ internal @</items>
-          <items id="text">Arbol</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="description">*</items>
-          <items id="text">Género</items>
+          <items id="description">Patient gender or administrative sex</items>
+          <items id="text">Gender</items>
         </term_definitions>
         <term_definitions code="at0003">
-          <items id="description">Masculino</items>
-          <items id="text">Masculino</items>
+          <items id="description">*</items>
+          <items id="text">Masculine</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="description">Femenino</items>
-          <items id="text">Femenino</items>
+          <items id="description">*</items>
+          <items id="text">Feminine</items>
         </term_definitions>
         <term_definitions code="at0005">
-          <items id="description">Desconocido</items>
-          <items id="text">Desconocido</items>
+          <items id="description">*</items>
+          <items id="text">Unknown</items>
         </term_definitions>
         <term_definitions code="at0006">
           <items id="description">*</items>
-          <items id="text">Fecha de nacimiento</items>
+          <items id="text">Date of birth</items>
         </term_definitions>
       </children>
       <cardinality>
@@ -335,11 +335,11 @@
       <value>openEHR-EHR-COMPOSITION.basic_demographic.v1</value>
     </archetype_id>
     <template_id>
-      <value>datos_demograficos.es.v1</value>
+      <value>basic_demographic.en.v1</value>
     </template_id>
     <term_definitions code="at0000">
-      <items id="description">*</items>
-      <items id="text">Datos demográficos básicos</items>
+      <items id="description">*unknown(es)</items>
+      <items id="text">Basic demographic</items>
     </term_definitions>
   </definition>
 </template>

@@ -5,6 +5,14 @@ concept
 	[at0000]	-- Basic demographic
 language
 	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
 description
 	original_author = <
 		["name"] = <"">
@@ -12,36 +20,43 @@ description
 	details = <
 		["es"] = <
 			language = <[ISO_639-1::es]>
-			purpose = <"">
+			purpose = <"Registra información demográfica básica, que es clínicamente relevante pero no llega a identificar al paciente.">
 			use = <"">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"CaboLabs">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"Record basic demographic information that is clinically relevant, but doesn't identifies the patient.">
+			use = <"">
+			misuse = <"">
+			copyright = <"CaboLabs">
 		>
 	>
-	lifecycle_state = <"0">
+	lifecycle_state = <"OrganisationDraft">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"35CF2C5C2BD22D7E72514B6C2ACA4F5D">
+		["MD5-CAM-1.0.1"] = <"794B7B61CCB1A42627F45826605A6056">
 	>
 
 definition
 	ADMIN_ENTRY[at0000] matches {	-- Basic demographic
 		data matches {
-			ITEM_TREE[at0001] matches {	-- Arbol
+			ITEM_TREE[at0001] matches {	-- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Género
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- Gender
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
 									[local::
-									at0003, 	-- Masculino
-									at0004, 	-- Femenino
-									at0005]	-- Desconocido
+									at0003, 	-- Masculine
+									at0004, 	-- Feminine
+									at0005]	-- Unknown
 								}
 							}
 						}
 					}
-					ELEMENT[at0006] occurrences matches {0..1} matches {	-- Fecha de nacimiento
+					ELEMENT[at0006] occurrences matches {0..1} matches {	-- Date of birth
 						value matches {
 							DV_DATE matches {
 								value matches {yyyy-mm-dd}
@@ -58,7 +73,7 @@ ontology
 		["es"] = <
 			items = <
 				["at0000"] = <
-					text = <"Basic demographic">
+					text = <"Datos demográficos básicos">
 					description = <"unknown">
 				>
 				["at0001"] = <
@@ -83,6 +98,38 @@ ontology
 				>
 				["at0006"] = <
 					text = <"Fecha de nacimiento">
+					description = <"*">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
+					text = <"Basic demographic">
+					description = <"">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Gender">
+					description = <"Patient gender or administrative sex">
+				>
+				["at0003"] = <
+					text = <"Masculine">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Feminine">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Unknown">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Date of birth">
 					description = <"*">
 				>
 			>

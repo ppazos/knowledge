@@ -5,6 +5,14 @@ concept
 	[at0000]	-- Basic demographic
 language
 	original_language = <[ISO_639-1::es]>
+	translations = <
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			author = <
+				["name"] = <"?">
+			>
+		>
+	>
 description
 	original_author = <
 		["name"] = <"">
@@ -15,13 +23,20 @@ description
 			purpose = <"">
 			use = <"">
 			misuse = <"">
-			copyright = <"">
+			copyright = <"CaboLabs">
+		>
+		["en"] = <
+			language = <[ISO_639-1::en]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"CaboLabs">
 		>
 	>
-	lifecycle_state = <"0">
+	lifecycle_state = <"OrganisationDraft">
 	other_contributors = <>
 	other_details = <
-		["MD5-CAM-1.0.1"] = <"1532965CA8FC200EBCEA09C5CEF2013C">
+		["MD5-CAM-1.0.1"] = <"9B5E2B74A2D73E1B470EAD6CB667794F">
 	>
 
 definition
@@ -31,7 +46,7 @@ definition
 				defining_code matches {[openehr::431]}
 			}
 		}
-		content cardinality matches {0..*; unordered} matches {
+		content cardinality matches {1..*; unordered} matches {
 			allow_archetype ADMIN_ENTRY occurrences matches {0..*} matches {
 				include
 					archetype_id/value matches {/openEHR-EHR-ADMIN_ENTRY\.basic_demographic\.v1/}
@@ -44,8 +59,16 @@ ontology
 		["es"] = <
 			items = <
 				["at0000"] = <
+					text = <"Datos demográficos básicos">
+					description = <"">
+				>
+			>
+		>
+		["en"] = <
+			items = <
+				["at0000"] = <
 					text = <"Basic demographic">
-					description = <"unknown">
+					description = <"*unknown(es)">
 				>
 			>
 		>
