@@ -1,0 +1,80 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-EVALUATION.alternative_text_and_coded_text.v1
+
+concept
+	[at0000]	-- Alternative text and coded text
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Alternative text and coded text">
+			use = <"Alternative text and coded text">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"63C55E780D96B2D45D6F24AEEF4FEFB1">
+	>
+
+definition
+	EVALUATION[at0000] matches {	-- Alternative text and coded text
+		data matches {
+			ITEM_TREE[at0001] matches {	-- Arbol
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0004] occurrences matches {0..1} matches {	-- text or coded text
+						value matches {
+							DV_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0005, 	-- aaa
+									at0006, 	-- bbb
+									at0007]	-- ccc
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Alternative text and coded text">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"text or coded text">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"aaa">
+					description = <"aaa">
+				>
+				["at0006"] = <
+					text = <"bbb">
+					description = <"bbb">
+				>
+				["at0007"] = <
+					text = <"ccc">
+					description = <"ccc">
+				>
+			>
+		>
+	>
