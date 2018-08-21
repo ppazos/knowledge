@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
-  <id>96a39a92-ca61-4b24-8928-d595dbe39639</id>
-  <name>control_del_peso.es.v1</name>
+<template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.openehr.org/v1">
+  <id>f354bc0c-7482-4041-b11f-270ecacc2dab</id>
+  <name>simple_weight_control.en.v1</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>

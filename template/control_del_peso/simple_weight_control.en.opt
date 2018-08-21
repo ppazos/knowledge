@@ -5,7 +5,7 @@
     <terminology_id>
       <value>ISO_639-1</value>
     </terminology_id>
-    <code_string>es</code_string>
+    <code_string>en</code_string>
   </language>
   <description>
     <original_author id="Original Author">Not Specified</original_author>
@@ -27,18 +27,18 @@
         <terminology_id>
           <value>ISO_639-1</value>
         </terminology_id>
-        <code_string>es</code_string>
+        <code_string>en</code_string>
       </language>
       <purpose>Not Specified</purpose>
     </details>
   </description>
   <uid>
-    <value>96a39a92-ca61-4b24-8928-d595dbe39639</value>
+    <value>f354bc0c-7482-4041-b11f-270ecacc2dab</value>
   </uid>
   <template_id>
-    <value>control_del_peso.es.v1</value>
+    <value>simple_weight_control.en.v1</value>
   </template_id>
-  <concept>control_del_peso.es.v1</concept>
+  <concept>Simple Weight Control</concept>
   <definition>
     <rm_type_name>COMPOSITION</rm_type_name>
     <occurrences>
@@ -638,64 +638,64 @@
           <value>openEHR-EHR-OBSERVATION.body_weight.v1</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">Medición del peso corporal de un individuo.</items>
-          <items id="text">Peso corporal</items>
+          <items id="description">Measurement of the body weight of an individual.</items>
+          <items id="text">Body weight</items>
         </term_definitions>
         <term_definitions code="at0001">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*Simple(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Simple</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*history(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">history</items>
         </term_definitions>
         <term_definitions code="at0003">
-          <items id="description">Cualquier evento.</items>
-          <items id="text">Cualquier evento.</items>
+          <items id="description">Any event.</items>
+          <items id="text">Any event</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="description">Peso del individuo.</items>
-          <items id="text">Peso</items>
+          <items id="description">The weight of the individual.</items>
+          <items id="text">Weight</items>
         </term_definitions>
         <term_definitions code="at0008">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*state structure(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">state structure</items>
         </term_definitions>
         <term_definitions code="at0009">
-          <items id="description">Descripción de la indumentaria del sujeto en el momento de la medición.</items>
-          <items id="text">Indumentaria</items>
+          <items id="description">Description of the state of dress of the person at the time of weighing.</items>
+          <items id="text">State of Dress</items>
         </term_definitions>
         <term_definitions code="at0010">
-          <items id="description">La indumentaria, incluyendo calzado, puede incrementar el peso de forma significativa.</items>
-          <items id="text">Totalmente vestido incluyendo calzado</items>
+          <items id="description">Clothing which may add significantly to weight, including shoes.</items>
+          <items id="text">Fully clothed, including shoes</items>
         </term_definitions>
         <term_definitions code="at0011">
-          <items id="description">La indumentaria no genera un incremento significativo del peso.</items>
-          <items id="text">Indumentaria ligera/Ropa interior</items>
+          <items id="description">Clothing which will not add to weight significantly.</items>
+          <items id="text">Lightly clothed/underwear</items>
         </term_definitions>
         <term_definitions code="at0013">
-          <items id="description">Sin ropa.</items>
-          <items id="text">Desnudo</items>
+          <items id="description">Without any clothes.</items>
+          <items id="text">Naked</items>
         </term_definitions>
         <term_definitions code="at0015">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*protocol structure(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">protocol structure</items>
         </term_definitions>
         <term_definitions code="at0017">
-          <items id="description">Únicamente con un pañal. Puede incrementar el peso de forma significativa.</items>
-          <items id="text">Pañales</items>
+          <items id="description">Wearing only a nappy - can add significant weight.</items>
+          <items id="text">Nappy/diaper</items>
         </term_definitions>
         <term_definitions code="at0020">
-          <items id="description">Detalles acerca del dispositivo de pesada.</items>
-          <items id="text">Dispositivo</items>
+          <items id="description">Details about the weighing device.</items>
+          <items id="text">Device</items>
         </term_definitions>
         <term_definitions code="at0024">
-          <items id="description">Observaciones acerca de la medición del peso.</items>
-          <items id="text">Observaciones</items>
+          <items id="description">Comment about the measurement of weight.</items>
+          <items id="text">Comment</items>
         </term_definitions>
         <term_definitions code="at0025">
-          <items id="description">Registrar cualquier consideración que pueda influir en la medida del peso ej: amputaciones, momento del ciclo menstrual, etc. (en)</items>
-          <items id="text">Factores de alteración</items>
+          <items id="description">Record any issues or factors that may impact on the measurement of body weight eg timing in menstrual cycle, timing of recent bowel motion or noting of amputation.</items>
+          <items id="text">Confounding Factors</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
@@ -1130,56 +1130,56 @@
           <value>openEHR-EHR-OBSERVATION.height.v1</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">La altura o longitud corporal es medida desde la coronilla de la cabeza hasta la planta de los pies. La altura es medida con el individuo en posición erguida y la longitud corporal, en posición recostada.</items>
-          <items id="text">Altura/Longitud corporal</items>
+          <items id="description">Height, or body length, is measured from crown of head to sole of foot.  Height is measured with the individual in a standing position and body length in a recumbent position.</items>
+          <items id="text">Height/Length</items>
         </term_definitions>
         <term_definitions code="at0001">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*history(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">history</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="description">Cualquier registro de altura o longitud corporal en un momento determinado.</items>
-          <items id="text">Cualquier evento</items>
+          <items id="description">Any timed measurement of height or body length.</items>
+          <items id="text">Any event</items>
         </term_definitions>
         <term_definitions code="at0003">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*Simple(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Simple</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="description">La longitud corporal desde la coronilla de la cabeza hasta la planta de los pies.</items>
-          <items id="text">Altura/Longitud corporal</items>
+          <items id="description">The length of the body from crown of head to sole of foot.</items>
+          <items id="text">Height/Length</items>
         </term_definitions>
         <term_definitions code="at0007">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*List(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">List</items>
         </term_definitions>
         <term_definitions code="at0011">
-          <items id="description">Descripción del dispositivo usado para medir la altura o la longitud corporal.</items>
-          <items id="text">Instrumento</items>
+          <items id="description">Description of the device used to measure height or body length.</items>
+          <items id="text">Device</items>
         </term_definitions>
         <term_definitions code="at0013">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*Tree(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0014">
-          <items id="description">Posición del individuo durante la medición de estatura.</items>
-          <items id="text">Posición</items>
+          <items id="description">Position of individual when measured.</items>
+          <items id="text">Position</items>
         </term_definitions>
         <term_definitions code="at0016">
-          <items id="description">La altura se mide de pie, sobre ambos pies con el peso distribuido en forma homogénea, con los talones juntos y ambos glúteos y talones en contacto con una placa posterior vertical o pared.</items>
-          <items id="text">De pie</items>
+          <items id="description">Height is measured standing on both feet with weight distributed evenly, heels together and both buttocks and heels in contact with a vertical back board.</items>
+          <items id="text">Standing</items>
         </term_definitions>
         <term_definitions code="at0018">
-          <items id="description">Comentario acerca de la medición de la altura/longitud corporal.</items>
-          <items id="text">Comentario</items>
+          <items id="description">Comment about the measurement of body height/length.</items>
+          <items id="text">Comment</items>
         </term_definitions>
         <term_definitions code="at0019">
-          <items id="description">Registro de todos las aspectos, condiciones o factores que pueden afectar la medición de la altura/longitud corporal, por ejemplo la amputación de miembros inferiores.</items>
-          <items id="text">Factores de confusión</items>
+          <items id="description">Record any issues or factors that may impact on the measurement of body height/length eg noting of amputation.</items>
+          <items id="text">Confounding factors</items>
         </term_definitions>
         <term_definitions code="at0020">
-          <items id="description">La longitud corporal es medida en una posición recostada y completamente extendida, con la pelvis plana, las piernas extendidas y los pies flexionados.</items>
-          <items id="text">Acostado</items>
+          <items id="description">Length is measured in a fully extended, recumbent position with the pelvis flat, legs extended and feet flexed.</items>
+          <items id="text">Lying</items>
         </term_definitions>
       </children>
       <children xsi:type="C_ARCHETYPE_ROOT">
@@ -1692,65 +1692,67 @@
           <value>openEHR-EHR-OBSERVATION.body_mass_index.v2</value>
         </archetype_id>
         <term_definitions code="at0000">
-          <items id="description">Medición calculada que compara el peso y altura de un individuo</items>
-          <items id="text">Índice de masa corporal</items>
+          <items id="description">Calculated measurement which compares a person's weight and height.</items>
+          <items id="text">Body mass index</items>
         </term_definitions>
         <term_definitions code="at0001">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*history(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">history</items>
         </term_definitions>
         <term_definitions code="at0002">
-          <items id="description">Cualquier registro en el tiempo del Índice de Masa Corporal</items>
-          <items id="text">Cualquier evento</items>
+          <items id="description">Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time.</items>
+          <items id="text">Any event</items>
         </term_definitions>
         <term_definitions code="at0003">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*Single(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Single</items>
         </term_definitions>
         <term_definitions code="at0004">
-          <items id="description">Índice que describe el cociente entre peso y altura.</items>
-          <items id="text">Índice de Masa Corporal</items>
+          <items id="description">Index describing ratio of weight to height.</items>
+          <items id="text">Body mass index</items>
         </term_definitions>
         <term_definitions code="at0005">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*List(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0006">
-          <items id="description">El método de registro del Índice de Masa Corporal.</items>
-          <items id="text">Método</items>
+          <items id="description">The method of entering the body mass index.</items>
+          <items id="text">Method</items>
         </term_definitions>
         <term_definitions code="at0007">
-          <items id="description">Índice de Masa Corporal calculado e ingresado automáticamente sin intervención del usuario.</items>
-          <items id="text">Registro automático</items>
+          <items id="description">Body Mass Index calculated and entered automatically without user intervention.</items>
+          <items id="text">Automatic entry</items>
         </term_definitions>
         <term_definitions code="at0008">
-          <items id="description">Índice de Masa Corporal calculado e ingresado directamente por el usuario.</items>
-          <items id="text">Entrada directa</items>
+          <items id="description">Body Mass Index calculated and entered directly by user.</items>
+          <items id="text">Direct entry</items>
         </term_definitions>
         <term_definitions code="at0010">
-          <items id="description">Fórmula usada para calcular el Índice de Masa Corporal.</items>
-          <items id="text">Fórmula</items>
+          <items id="description">Formula used to derive the body mass index.</items>
+          <items id="text">Formula</items>
         </term_definitions>
         <term_definitions code="at0011">
-          <items id="comment">*For example: the calculation was made using adjusted weight or height.(en)</items>
-          <items id="description">*Narrative description of any issues or factors that may impact on the calculation.(en)</items>
-          <items id="text">*Confounding factors(en)</items>
+          <items id="comment">For example: the calculation was made using adjusted weight or height.</items>
+          <items id="description">Narrative description of any issues or factors that may impact on the calculation.</items>
+          <items id="text">Confounding factors</items>
         </term_definitions>
         <term_definitions code="at0012">
-          <items id="description">**(en)</items>
-          <items id="text">*New element(en)</items>
+          <items id="description">Additional narrative about the calculation, not captured in other fields.</items>
+          <items id="text">Comment</items>
         </term_definitions>
         <term_definitions code="at0013">
-          <items id="description">**(en)</items>
-          <items id="text">*New element(en)</items>
+          <items id="comment">For example: underweight, normal, overweight or obese.</items>
+          <items id="description">Single word, phrase or brief description that represents the clinical meaning and significance of the body mass index.</items>
+          <items id="text">Clinical interpretation</items>
         </term_definitions>
         <term_definitions code="at0014">
-          <items id="description">*@ internal @(en)</items>
-          <items id="text">*Tree(en)</items>
+          <items id="description">@ internal @</items>
+          <items id="text">Tree</items>
         </term_definitions>
         <term_definitions code="at0015">
-          <items id="description">**(en)</items>
-          <items id="text">*Cluster(en)</items>
+          <items id="comment">For example: Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.</items>
+          <items id="description">Additional information required to capture local context or to align with other reference models/formalisms.</items>
+          <items id="text">Extension</items>
         </term_definitions>
         <term_bindings terminology="SNOMED-CT">
           <items code="at0004">
@@ -1788,19 +1790,20 @@
       <value>openEHR-EHR-COMPOSITION.encounter.v1</value>
     </archetype_id>
     <template_id>
-      <value>control_del_peso.es.v1</value>
+      <value>simple_weight_control.en.v1</value>
     </template_id>
     <term_definitions code="at0000">
-      <items id="description">Interacción, contacto o evento de cuidado entre un paciente y un proveedor de salud.</items>
-      <items id="text">Encuentro</items>
+      <items id="description">Interaction, contact or care event between a subject of care and healthcare provider(s).</items>
+      <items id="text">Encounter</items>
     </term_definitions>
     <term_definitions code="at0001">
       <items id="description">@ internal @</items>
       <items id="text">Tree</items>
     </term_definitions>
     <term_definitions code="at0002">
-      <items id="description">Información adicional requerida para capturar el contexto local o alinear con otros modelos de referencia o formalismos.</items>
-      <items id="text">Extensión</items>
+      <items id="comment">e.g. Local hospital departmental infomation or additional metadata to align with FHIR or CIMI equivalents.</items>
+      <items id="description">Additional information required to capture local context or to align with other reference models/formalisms.</items>
+      <items id="text">Extension</items>
     </term_definitions>
   </definition>
 </template>
