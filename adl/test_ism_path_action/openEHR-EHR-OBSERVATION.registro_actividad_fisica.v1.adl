@@ -1,0 +1,139 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.registro_actividad_fisica.v1
+
+concept
+	[at0000]	-- Registro actividad fisica
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"3604B7FF6DA01341091C668E4806D2DF">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Registro actividad fisica
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Cualquier evento
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Arbol
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Actividad
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005, 	-- caminar
+													at0006, 	-- correr
+													at0007, 	-- nadar
+													at0008]	-- bicicleta
+												}
+											}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- Intensidad
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0010, 	-- baja
+													at0011, 	-- media
+													at0012]	-- alta
+												}
+											}
+										}
+									}
+									ELEMENT[at0013] occurrences matches {0..1} matches {	-- Calorias
+										value matches {
+											C_DV_QUANTITY <
+												property = <[openehr::121]>
+											>
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Registro actividad fisica">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Cualquier evento">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Actividad">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"caminar">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"correr">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"nadar">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"bicicleta">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Intensidad">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"baja">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"media">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"alta">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"Calorias">
+					description = <"*">
+				>
+			>
+		>
+	>

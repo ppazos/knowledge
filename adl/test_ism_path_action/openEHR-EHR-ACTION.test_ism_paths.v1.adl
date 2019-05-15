@@ -1,0 +1,126 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-ACTION.test_ism_paths.v1
+
+concept
+	[at0000]	-- Test ism paths
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"04108C27500FB04518F11DA1F56C0961">
+	>
+
+definition
+	ACTION[at0000] matches {	-- Test ism paths
+		ism_transition matches {
+			ISM_TRANSITION[at0003] matches {	-- Planned
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[openehr::526]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[local::at0003]}		-- Planned
+					}
+				}
+			}
+			ISM_TRANSITION[at0004] matches {	-- Scheduled
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[openehr::529]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[local::at0004]}		-- Scheduled
+					}
+				}
+			}
+			ISM_TRANSITION[at0005] matches {	-- Active
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[openehr::245]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[local::at0005]}		-- Active
+					}
+				}
+			}
+			ISM_TRANSITION[at0006] matches {	-- Completed
+				current_state matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[openehr::532]}
+					}
+				}
+				careflow_step matches {
+					DV_CODED_TEXT matches {
+						defining_code matches {[local::at0006]}		-- Completed
+					}
+				}
+			}
+		}
+		description matches {
+			ITEM_TREE[at0001] matches {	-- Arbol
+				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0002] occurrences matches {0..1} matches {	-- text
+						value matches {
+							DV_TEXT matches {*}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Test ism paths">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"text">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Planned">
+					description = <"*">
+				>
+				["at0004"] = <
+					text = <"Scheduled">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"Active">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"Completed">
+					description = <"*">
+				>
+			>
+		>
+	>
