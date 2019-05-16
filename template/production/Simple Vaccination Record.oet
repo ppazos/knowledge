@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <template xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="openEHR/v1/Template">
   <id>62eaeb34-fb59-4666-b608-eb02d8abc056</id>
-  <name>Simple Vaccination Record</name>
+  <name>simple_vaccination_record.en.v1</name>
   <description>
     <lifecycle_state>Initial</lifecycle_state>
     <details>
