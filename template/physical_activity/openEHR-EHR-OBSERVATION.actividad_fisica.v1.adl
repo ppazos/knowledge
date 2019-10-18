@@ -1,0 +1,139 @@
+archetype (adl_version=1.4)
+	openEHR-EHR-OBSERVATION.actividad_fisica.v1
+
+concept
+	[at0000]	-- Actividad fisica
+language
+	original_language = <[ISO_639-1::es]>
+description
+	original_author = <
+		["name"] = <"">
+	>
+	details = <
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"">
+			use = <"">
+			misuse = <"">
+			copyright = <"">
+		>
+	>
+	lifecycle_state = <"0">
+	other_contributors = <>
+	other_details = <
+		["MD5-CAM-1.0.1"] = <"B6C21724C113F514795E8BC1BCB784E0">
+	>
+
+definition
+	OBSERVATION[at0000] matches {	-- Actividad fisica
+		data matches {
+			HISTORY[at0001] matches {	-- Event Series
+				events cardinality matches {1..*; unordered} matches {
+					EVENT[at0002] occurrences matches {0..1} matches {	-- Cualquier evento
+						data matches {
+							ITEM_TREE[at0003] matches {	-- Arbol
+								items cardinality matches {0..*; unordered} matches {
+									ELEMENT[at0004] occurrences matches {0..1} matches {	-- Tipo de actividad
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0005, 	-- caminar
+													at0006, 	-- correr
+													at0007, 	-- bicicleta
+													at0008]	-- natacion
+												}
+											}
+										}
+									}
+									ELEMENT[at0009] occurrences matches {0..1} matches {	-- Duracion
+										value matches {
+											DV_DURATION matches {
+												value matches {|>=PT0M|}
+											}
+										}
+									}
+									ELEMENT[at0010] occurrences matches {0..1} matches {	-- Intensidad
+										value matches {
+											DV_CODED_TEXT matches {
+												defining_code matches {
+													[local::
+													at0011, 	-- baja
+													at0012, 	-- media
+													at0013]	-- alta
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["es"] = <
+			items = <
+				["at0000"] = <
+					text = <"Actividad fisica">
+					description = <"unknown">
+				>
+				["at0001"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Cualquier evento">
+					description = <"*">
+				>
+				["at0003"] = <
+					text = <"Arbol">
+					description = <"@ internal @">
+				>
+				["at0004"] = <
+					text = <"Tipo de actividad">
+					description = <"*">
+				>
+				["at0005"] = <
+					text = <"caminar">
+					description = <"*">
+				>
+				["at0006"] = <
+					text = <"correr">
+					description = <"*">
+				>
+				["at0007"] = <
+					text = <"bicicleta">
+					description = <"*">
+				>
+				["at0008"] = <
+					text = <"natacion">
+					description = <"*">
+				>
+				["at0009"] = <
+					text = <"Duracion">
+					description = <"*">
+				>
+				["at0010"] = <
+					text = <"Intensidad">
+					description = <"*">
+				>
+				["at0011"] = <
+					text = <"baja">
+					description = <"*">
+				>
+				["at0012"] = <
+					text = <"media">
+					description = <"*">
+				>
+				["at0013"] = <
+					text = <"alta">
+					description = <"*">
+				>
+			>
+		>
+	>
